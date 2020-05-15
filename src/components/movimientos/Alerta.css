@@ -1,0 +1,35 @@
+.Alerta_Wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+  backdrop-filter: blur(4px);
+  background: transparent;
+  background: transparent;
+}
+
+.Wrapper_Rectangulo_Alerta {
+  padding-top: 450px;
+}
+
+.Rectangulo_Alerta {
+  height: 130.19px;
+  width: 199.5px;
+  background-color: #c8c8c8;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 5px 40px 5px 40px;
+  margin-left: auto;
+  margin-right: 120px;
+}
+
+.Texto_Alerta {
+  height: 56px;
+  width: 174px;
+  color: #3c3c3b;
+  font-size: 10px;
+  letter-spacing: 1px;
+  line-height: 12px;
+  text-align: justify;
+  padding-left: 27px;
+  padding-top: 25px;
+}

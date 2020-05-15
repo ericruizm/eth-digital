@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  font-family: Roboto;
+  margin: 0;
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.3;
+}
+
+.Wrapper_Hero {
+  height: 100vh;
+  background: linear-gradient(180deg, #323231 0%, #414140 100%);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 120px;
+  z-index: -2;
+}
+.Hero {
+  height: 100%;
+  background: linear-gradient(180deg, #323231 0%, #414140 100%);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 120px;
+  z-index: -2;
+}
+
+.Encabezado {
+  height: 55px;
+  padding-top: 32px;
+  padding-left: 160px;
+  position: absolute;
+}
+.Encabezado h2 {
+  width: 100%;
+  color: #fff;
+  font-size: 22px;
+}
+
+.Nombre {
+  height: 55px;
+  padding-top: 32px;
+  padding-right: 50px;
+  float: right;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.3;
+}
+.Nombre h2 {
+  width: 100%;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.Nombre img {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+.Nombre:hover {
+  opacity: 1;
+}
+
+.Wrapper_Rectangulo {
+  padding-top: 100px;
+  padding-left: 160px;
+  padding-right: 35px;
+}
+.Rectangulo {
+  height: 100%;
+  padding: 0px 30px 100px 30px;
+  width: 100%;
+  border-radius: 5px 80px;
+  background: linear-gradient(180deg, #282827 40%, #3c3c3b 100%);
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1);
+}
+
+.Titulo_Rectangulo {
+  padding-top: 22.8px;
+  padding-left: 7px;
+  height: 19.45px;
+  width: 97.09px;
+  opacity: 0.3;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 2.63px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.Contenedor_Rectangulo {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 70px;
+  width: 1000px;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 30px;
+  align-items: center;
+}
+
+.Cantidades {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 30px;
+  border-radius: 5px 30px;
+  background-color: rgba(18, 18, 18, 0.2);
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1);
+  scale: 1;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.Cantidades:hover {
+  transform: scale(1.06);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Titulo_Cantidades {
+  padding-top: 15px;
+  padding-left: 15px;
+  height: 34.04px;
+  width: 146.22px;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 2.25px;
+  line-height: 14px;
+  text-transform: uppercase;
+  scale: 1;
+}
+
+.Texto_Cantidades {
+  right: 50%;
+  margin-top: 25px;
+  color: #af9760;
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.Encabezado2 {
+  height: 55px;
+  padding-top: 32px;
+  padding-left: 160px;
+  position: relative;
+}
+.Encabezado2 h2 {
+  width: 100%;
+  color: #fff;
+  font-size: 22px;
+}
+
+.Wrapper_Datos {
+  position: relative;
+  padding-left: 160px;
+  padding-right: 35px;
+  padding-top: 20px;
+
+  /* width */
+}
+::-webkit-scrollbar {
+  width: 0px;
+  height: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2d2d2c;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.301);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.Titulo {
+  height: 60px;
+  padding: 0px 30px;
+  width: 100%;
+}
+
+.Datos {
+  height: 76.35px;
+  padding: 0px 30px;
+  width: 100%;
+  border-radius: 5px 30px;
+  background: linear-gradient(
+    90deg,
+    rgba(60, 60, 59, 0.2) 0%,
+    rgba(60, 60, 59, 0) 100%
+  );
+  box-shadow: inset 0 20px 20px 0 rgba(0, 0, 0, 0.1);
+  scale: 1;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.Datos:hover {
+  transform: scale(1.02);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Datos_Grid {
+  display: inline-block;
+  margin: 0px auto;
+  margin-top: 20px;
+  width: 100%;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.Titulo_Tabla {
+  width: 100px;
+  margin-top: 26px;
+  height: 20.72px;
+  opacity: 0.5;
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+
+.Titulo_Tabla_ID {
+  width: 262.15px;
+  margin-top: 26px;
+  height: 20.72px;
+  opacity: 0.5;
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+
+.Fecha {
+  width: 100px;
+  margin-top: 26px;
+  height: 20.72px;
+  opacity: 0.5;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  line-height: 19px;
+  margin-bottom: 12px;
+}
+
+.Cantidad {
+  width: 100px;
+  margin-top: 26px;
+  height: 20.72px;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  line-height: 19px;
+}
+
+.Cantidad2 {
+  width: 125px;
+  margin-top: 26px;
+  padding-left: 30px;
+  height: 20.72px;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  line-height: 19px;
+}
+.Cantidad3 {
+  width: 125px;
+  margin-top: 26px;
+  padding-left: 30px;
+  height: 20.72px;
+  color: #b39f38;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  line-height: 19px;
+}
+.Cantidad4 {
+  width: 125px;
+  margin-top: 26px;
+  padding-left: 30px;
+  height: 20.72px;
+  color: #32803d;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  line-height: 19px;
+}
+
+.Cantidad5 {
+  width: 125px;
+  margin-top: 26px;
+  padding-left: 50px;
+  height: 20.72px;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  line-height: 19px;
+}
+
+.Beneficio {
+  width: 100px;
+  margin-top: 26px;
+  height: 20.72px;
+  color: #32803d;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  line-height: 19px;
+}
+
+.Beneficio_Porcentaje {
+  width: 100px;
+  margin-top: 26px;
+  padding-left: 20px;
+  height: 20.72px;
+  color: #32803d;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  line-height: 19px;
+}
+
+.ID_transaccion {
+  width: 262.15px;
+  margin-top: 26px;
+  height: 20.72px;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  line-height: 19px;
+}
+
+@media (max-width: 1300px) {
+  .Texto_Cantidades {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+  }
+
+  .Cantidades {
+    width: 90%;
+  }
+
+  .Contenedor_Rectangulo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .Texto_Cantidades {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+  }
+
+  .Cantidades {
+    width: 90%;
+  }
+
+  .Contenedor_Rectangulo {
+    width: 100%;
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (max-width: 750px) {
+  .Encabezado {
+    padding-top: 33px;
+    padding-left: 100px;
+  }
+  .Encabezado h2 {
+    font-size: 20px;
+  }
+  .Encabezado2 {
+    padding-top: 33px;
+    padding-left: 40px;
+  }
+  .Encabezado2 h2 {
+    font-size: 20px;
+  }
+
+  .Nombre {
+    padding-top: 33px;
+    padding-right: 50px;
+  }
+
+  .Nombre h2 {
+    font-size: 20px;
+  }
+
+  .Wrapper_Rectangulo {
+    padding-left: 35px;
+  }
+
+  .Texto_Cantidades {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+  }
+
+  .Cantidades {
+    width: 100%;
+  }
+  .Cantidades:hover {
+    transform: scale(1.1);
+  }
+
+  .Contenedor_Rectangulo {
+    width: 100%;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .Wrapper_Datos {
+    padding-left: 35px;
+  }
+
+  .Datos_Grid {
+    grid-gap: 20px;
+  }
+  .Titulo_Tabla {
+    width: 95px;
+    font-size: 14px;
+  }
+  .Titulo_Tabla_ID {
+    width: 262.15px;
+
+    font-size: 14px;
+  }
+
+  .Fecha {
+    width: 95px;
+    font-size: 14px;
+  }
+
+  .Cantidad {
+    width: 95px;
+    font-size: 14px;
+  }
+  .Cantidad2 {
+    width: 95px;
+    font-size: 14px;
+  }
+  .Cantidad3 {
+    width: 95px;
+    font-size: 14px;
+  }
+  .Cantidad4 {
+    width: 95px;
+    font-size: 14px;
+  }
+  .Cantidad5 {
+    width: 95px;
+    font-size: 14px;
+  }
+
+  .Beneficio {
+    width: 95px;
+    font-size: 14px;
+  }
+
+  .Beneficio_Porcentaje {
+    width: 95px;
+    font-size: 14px;
+  }
+
+  .ID_transaccion {
+    width: 262.15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Encabezado {
+    padding-top: 33px;
+    padding-left: 100px;
+  }
+  .Encabezado h2 {
+    font-size: 20px;
+  }
+  .Encabezado2 {
+    padding-top: 33px;
+    padding-left: 40px;
+  }
+  .Encabezado2 h2 {
+    font-size: 20px;
+  }
+
+  .Nombre {
+    padding-top: 33px;
+    padding-right: 50px;
+  }
+
+  .Nombre h2 {
+    font-size: 20px;
+  }
+
+  .Wrapper_Rectangulo {
+    padding-left: 35px;
+  }
+
+  .Texto_Cantidades {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+  }
+
+  .Cantidades {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .Cantidades:hover {
+    transform: scale(1.1);
+  }
+
+  .Rectangulo {
+    height: 100%;
+    padding-bottom: 70px;
+  }
+
+  .Contenedor_Rectangulo {
+    grid-template-columns: repeat(1, auto);
+
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  .Wrapper_Datos {
+    padding-left: 35px;
+  }
+
+  .Datos_Grid {
+    grid-gap: 20px;
+  }
+  .Titulo_Tabla {
+    width: 70px;
+    font-size: 13px;
+  }
+  .Titulo_Tabla_ID {
+    width: 262.15px;
+
+    font-size: 13px;
+  }
+
+  .Fecha {
+    width: 70px;
+    font-size: 13px;
+  }
+
+  .Cantidad {
+    width: 70px;
+    font-size: 13px;
+  }
+
+  .Cantidad2 {
+    font-size: 13px;
+  }
+  .Cantidad3 {
+    font-size: 13px;
+  }
+  .Cantidad4 {
+    font-size: 13px;
+  }
+  .Cantidad5 {
+    font-size: 13px;
+  }
+
+  .Beneficio {
+    width: 70px;
+    font-size: 13px;
+  }
+
+  .Beneficio_Porcentaje {
+    width: 70px;
+    font-size: 13px;
+  }
+
+  .ID_transaccion {
+    width: 262.15px;
+    font-size: 13px;
+  }
+
+  .Datos:hover {
+    transform: scale(1.05);
+  }
+}

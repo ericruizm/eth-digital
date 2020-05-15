@@ -1,0 +1,802 @@
+.Wrapper_Ajustes {
+  position: relative;
+  margin-left: 160px;
+  margin-right: 35px;
+  margin-top: 60px;
+  padding: 10px 20px 80px 20px;
+  border-radius: 0px 80px 5px 80px;
+  background: linear-gradient(180deg, #282827 0%, #3c3c3b 100%);
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1);
+  /* width */
+}
+
+.Wrapper_Datos_Usuario {
+  width: 100%;
+  height: 100%;
+  padding: 20px 40px;
+}
+
+.Grid_Wrapper_Datos_Usuario {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  justify-content: center;
+  text-align: left;
+  justify-items: center;
+}
+
+.Texto_Correo_Electronico {
+  height: 38px;
+  width: 583px;
+  opacity: 0.8;
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  line-height: 19px;
+}
+.Texto_Correo_Electronico2 {
+  height: 38px;
+  width: 583px;
+  opacity: 0.8;
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  line-height: 19px;
+}
+
+.form3 {
+  height: 100%;
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.form3 input {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.form3 label {
+  position: absolute;
+  left: 0%;
+  bottom: -8px;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.404);
+}
+.form3 label::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.856);
+  bottom: -1px;
+  left: 0%;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.form3 span {
+  color: rgba(255, 255, 255, 0.404);
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.content-name3 {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.form3 input:focus + .label-name .content-name3,
+.form3 input:valid + .label-name .content-name3 {
+  transform: translateY(-110%);
+  font-size: 14px;
+}
+
+.form3 input:focus + .label-name::after,
+.form3 input:valid + .labe-name::after {
+  transform: translateX(0%);
+}
+
+.Wrapper_Telefono {
+  width: 82%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 7% 50%;
+  grid-gap: 20px;
+  justify-content: center;
+  text-align: left;
+  justify-items: center;
+}
+
+.form_prefijo {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.form_prefijo input {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.form_prefijo label {
+  position: absolute;
+  left: -1%;
+  bottom: -8px;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.404);
+}
+.form_prefijo label::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.856);
+  bottom: -1px;
+  left: 0%;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.form_prefijo span {
+  color: rgba(255, 255, 255, 0.404);
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.content-name-prefijo {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.form_prefijo input:focus + .label-name .content-name-prefijo,
+.form_prefijo input:valid + .label-name .content-name-prefijo {
+  transform: translateY(-110%);
+  font-size: 14px;
+}
+
+.form_prefijo input:focus + .label-name::after,
+.form_prefijo input:valid + .labe-name::after {
+  transform: translateX(0%);
+}
+
+.form_telefono {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.form_telefono input {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.form_telefono label {
+  position: absolute;
+  left: 0%;
+  bottom: -8px;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.404);
+}
+.form_telefono label::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.856);
+  bottom: -1px;
+  left: 0%;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.form_telefono span {
+  color: rgba(255, 255, 255, 0.404);
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.content-name-telefono {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.form_telefono input:focus + .label-name .content-name-telefono,
+.form_telefono input:valid + .label-name .content-name-telefono {
+  transform: translateY(-110%);
+  font-size: 14px;
+}
+
+.form_telefono input:focus + .label-name::after,
+.form_telefono input:valid + .labe-name::after {
+  transform: translateX(0%);
+}
+
+.Boton_Actualizar {
+  margin-top: 50px;
+  height: 50px;
+  width: 50%;
+  border-radius: 5px 20px 5px 80px;
+  background: linear-gradient(355.12deg, #4d4839 0%, #af9760 100%);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.Actualizar {
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 1.29px;
+  line-height: 26px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+.Wrapper_Nombre_Apellidos {
+  width: 80%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 20px;
+  justify-content: center;
+  text-align: left;
+  justify-items: center;
+}
+
+.form_nombre {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.form_nombre input {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.form_nombre label {
+  position: absolute;
+  left: -1%;
+  bottom: -8px;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.404);
+}
+.form_nombre label::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.856);
+  bottom: -1px;
+  left: 0%;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.form_nombre span {
+  color: rgba(255, 255, 255, 0.404);
+  font-weight: 300;
+  font-size: 18px;
+  padding-left: 2px;
+}
+
+.content-name-nombre {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.form_nombre input:focus + .label-name .content-name-nombre,
+.form_nombre input:valid + .label-name .content-name-nombre {
+  transform: translateY(-110%);
+  font-size: 14px;
+}
+
+.form_nombre input:focus + .label-name::after,
+.form_nombre input:valid + .labe-name::after {
+  transform: translateX(0%);
+}
+
+.Grid_Wrapper_Contrasena {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  justify-content: center;
+  text-align: left;
+  justify-items: center;
+}
+.AnchoTexto {
+  width: 583px;
+}
+
+.form4 {
+  height: 100%;
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.form4 input {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.form4 label {
+  position: absolute;
+  left: 0%;
+  bottom: -8px;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.404);
+}
+.form4 label::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.856);
+  bottom: -1px;
+  left: 0%;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.form4 span {
+  color: rgba(255, 255, 255, 0.404);
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.content-name4 {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.form4 input:focus + .label-name .content-name4,
+.form4 input:valid + .label-name .content-name4 {
+  transform: translateY(-110%);
+  font-size: 14px;
+}
+
+.form4 input:focus + .label-name::after,
+.form4 input:valid + .labe-name::after {
+  transform: translateX(0%);
+}
+
+.Boton_DatosUser_Marcado {
+  width: 200px;
+  height: 40px;
+  background: #282827;
+  position: absolute;
+  margin-left: 160px;
+  margin-top: 20px;
+  border-radius: 5px 20px 0px 0px;
+  cursor: pointer;
+  z-index: 2;
+}
+.Boton_DatosUser_Desmarcado {
+  width: 200px;
+  height: 40px;
+  background: #28282738;
+  position: absolute;
+  margin-left: 160px;
+  margin-top: 20px;
+  border-radius: 5px 20px 0px 0px;
+  cursor: pointer;
+}
+.Texto_Boton_DatosUser {
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 2.67px;
+  line-height: 19px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.Boton_DatosPer_Marcado {
+  width: 200px;
+  height: 40px;
+  background: #282827;
+  position: absolute;
+  margin-left: 355px;
+  margin-top: 20px;
+  border-radius: 5px 20px 0px 0px;
+  cursor: pointer;
+
+  z-index: 2;
+}
+.Boton_DatosPer_Desmarcado {
+  width: 200px;
+  height: 40px;
+  background: #28282738;
+  position: absolute;
+  margin-left: 355px;
+  margin-top: 20px;
+  border-radius: 5px 20px 0px 0px;
+
+  cursor: pointer;
+}
+.Texto_Boton_DatosPer {
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 2.67px;
+  line-height: 19px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.Boton_Contrasena_Desmarcado {
+  width: 250px;
+  height: 40px;
+  background: #28282738;
+  position: absolute;
+  margin-left: 550px;
+  margin-top: 20px;
+  border-radius: 5px 20px 0px 0px;
+  cursor: pointer;
+}
+
+.Boton_Contrasena_Marcado {
+  width: 250px;
+  height: 40px;
+  background: #282827;
+  position: absolute;
+  margin-left: 550px;
+  margin-top: 20px;
+  border-radius: 5px 20px 0px 0px;
+  cursor: pointer;
+  z-index: 10;
+}
+.Texto_Boton_Contrasena {
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 2.67px;
+  line-height: 19px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .Texto_Correo_Electronico {
+    width: 100%;
+    opacity: 0.8;
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1.6px;
+    line-height: 19px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin-left: 0%;
+    margin-bottom: 30px;
+  }
+  .Texto_Correo_Electronico2 {
+    width: 70%;
+    opacity: 0.8;
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1.6px;
+    line-height: 19px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin-left: 15%;
+    margin-bottom: 10px;
+  }
+  .Boton_DatosUser_Marcado {
+    margin-left: 160px;
+    width: 200x;
+  }
+  .Boton_DatosUser_Desmarcado {
+    margin-left: 160px;
+    width: 200px;
+  }
+  .Boton_DatosPer_Marcado {
+    margin-left: 350px;
+    width: 200px;
+  }
+  .Boton_DatosPer_Desmarcado {
+    margin-left: 350px;
+    width: 200px;
+  }
+  .Boton_Contrasena_Marcado {
+    margin-left: 540px;
+    width: 200px;
+  }
+  .Boton_Contrasena_Desmarcado {
+    margin-left: 540px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 750px) {
+  .Boton_DatosUser_Marcado {
+    margin-left: 35px;
+    width: 100px;
+  }
+  .Boton_DatosUser_Desmarcado {
+    margin-left: 35px;
+    width: 100px;
+  }
+  .Texto_Boton_DatosUser {
+    font-size: 10px;
+    width: 80px;
+    padding-top: 5px;
+    padding-left: 10px;
+    color: #fff;
+    letter-spacing: 1.88px;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 15px;
+  }
+  .Boton_DatosPer_Marcado {
+    margin-left: 130px;
+    width: 100px;
+  }
+  .Boton_DatosPer_Desmarcado {
+    margin-left: 130px;
+    width: 100px;
+  }
+  .Texto_Boton_DatosPer {
+    font-size: 10px;
+    width: 80px;
+    padding-top: 5px;
+    padding-left: 10px;
+    color: #fff;
+    letter-spacing: 1.88px;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 15px;
+  }
+  .Boton_Contrasena_Marcado {
+    margin-left: 227px;
+    width: 100px;
+  }
+  .Boton_Contrasena_Desmarcado {
+    margin-left: 227px;
+    width: 100px;
+  }
+  .Texto_Boton_Contrasena {
+    font-size: 9px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .Wrapper_Ajustes {
+    margin-left: 35px;
+  }
+  .Wrapper_Texto_Ajustes2 {
+    width: 350px;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+  }
+  .Wrapper_Texto_Ajustes {
+    width: 500px;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+  }
+  .Texto_Correo_Electronico {
+    width: 50%;
+    opacity: 0.8;
+    color: #fff;
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 1.6px;
+    line-height: 19px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin-left: 25%;
+    margin-bottom: 30px;
+  }
+  .Texto_Correo_Electronico2 {
+    width: 70%;
+    opacity: 0.8;
+    color: #fff;
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 1.6px;
+    line-height: 19px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin-left: 15%;
+    margin-bottom: 10px;
+  }
+  .Boton_Actualizar {
+    width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Boton_DatosUser_Marcado {
+    margin-left: 35px;
+    width: 100px;
+  }
+  .Boton_DatosUser_Desmarcado {
+    margin-left: 35px;
+    width: 100px;
+  }
+  .Texto_Boton_DatosUser {
+    font-size: 10px;
+    width: 80px;
+    padding-top: 5px;
+    padding-left: 10px;
+    color: #fff;
+    letter-spacing: 1.88px;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 15px;
+  }
+  .Boton_DatosPer_Marcado {
+    margin-left: 130px;
+    width: 100px;
+  }
+  .Boton_DatosPer_Desmarcado {
+    margin-left: 130px;
+    width: 100px;
+  }
+  .Texto_Boton_DatosPer {
+    font-size: 10px;
+    width: 80px;
+    padding-top: 5px;
+    padding-left: 10px;
+    color: #fff;
+    letter-spacing: 1.88px;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 15px;
+  }
+  .Boton_Contrasena_Marcado {
+    margin-left: 225px;
+    width: 100px;
+  }
+  .Boton_Contrasena_Desmarcado {
+    margin-left: 225px;
+    width: 100px;
+  }
+  .Texto_Boton_Contrasena {
+    font-size: 10px;
+    width: 80px;
+    padding-top: 5px;
+    padding-left: 10px;
+    color: #fff;
+    letter-spacing: 1.88px;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 30px;
+  }
+
+  .Wrapper_Ajustes {
+    border-radius: 0px 50px 5px 80px;
+    margin-left: 35px;
+  }
+  .Wrapper_Texto_Ajustes {
+    width: 500px;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+  }
+  .Wrapper_Texto_Ajustes2 {
+    width: 350px;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+  }
+  .Texto_Correo_Electronico {
+    width: 50%;
+    opacity: 0.8;
+    color: #fff;
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 1.6px;
+    line-height: 19px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin-left: 25%;
+    margin-bottom: 30px;
+  }
+  .Texto_Correo_Electronico2 {
+    width: 70%;
+    opacity: 0.8;
+    color: #fff;
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 1.6px;
+    line-height: 19px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin-left: 15%;
+    margin-bottom: 10px;
+  }
+  .Boton_Actualizar {
+    width: 300px;
+  }
+}

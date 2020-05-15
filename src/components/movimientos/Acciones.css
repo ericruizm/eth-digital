@@ -1,0 +1,161 @@
+.Wrapper_Rectangulo2 {
+  padding-top: 20px;
+  padding-left: 160px;
+  padding-right: 35px;
+  padding-bottom: 50px;
+}
+
+.Rectangulo2 {
+  height: 100%;
+  padding: 0px 30px 100px 30px;
+  width: 100%;
+  border-radius: 5px 80px;
+  background: linear-gradient(180deg, #282827 40%, #3c3c3b 100%);
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1);
+}
+
+.Contenedor_Rectangulo2 {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 70px;
+  width: 1000px;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 30px;
+  align-items: center;
+}
+
+.Cantidades2 {
+  height: 100%;
+  width: 80%;
+  padding-bottom: 40px;
+  border-radius: 5px 30px 5px 70px;
+  background-color: rgba(18, 18, 18, 0.2);
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1);
+  scale: 1;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.Cantidades2:hover {
+  transform: scale(1.06);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Cantidades_Grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 20px;
+  justify-content: center;
+  padding-top: 40px;
+  cursor: pointer;
+}
+.Cantidades_Grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 9px;
+  justify-content: center;
+  padding-top: 40px;
+  cursor: pointer;
+}
+
+.Icono_Depositar {
+  height: 22px;
+  width: 22px;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+.Icono_Retirar {
+  height: 22px;
+  width: 22px;
+  opacity: 0.8;
+  margin-top: 0px;
+  transform: rotate(180deg);
+}
+.Texto_Depositar {
+  height: 28px;
+  width: 117px;
+  opacity: 0.8;
+  color: #f2f2f2;
+  font-size: 24px;
+  letter-spacing: 1.41px;
+  line-height: 28px;
+  text-align: center;
+}
+
+@media (max-width: 1300px) {
+  .Contenedor_Rectangulo2 {
+    width: 100%;
+  }
+  .Cantidades2 {
+    width: 90%;
+  }
+  .Texto_Depositar {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .Contenedor_Rectangulo2 {
+    width: 100%;
+    grid-template-columns: repeat(1, auto);
+  }
+  .Cantidades_Grid2 {
+    grid-gap: 20px;
+  }
+  .Cantidades2 {
+    width: 90%;
+  }
+  .Texto_Depositar {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 750px) {
+  .Wrapper_Rectangulo2 {
+    padding-left: 35px;
+  }
+  .Contenedor_Rectangulo2 {
+    width: 100%;
+    grid-template-columns: repeat(1, auto);
+  }
+  .Cantidades_Grid2 {
+    grid-gap: 20px;
+  }
+
+  .Cantidades2 {
+    width: 100%;
+  }
+  .Cantidades2:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 500px) {
+  .Wrapper_Rectangulo {
+    padding-left: 35px;
+  }
+  .Contenedor_Rectangulo {
+    grid-template-columns: repeat(1, auto);
+
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+  }
+  .Cantidades_Grid2 {
+    grid-gap: 20px;
+  }
+
+  .Cantidades {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .Cantidades:hover {
+    transform: scale(1.1);
+  }
+  .Rectangulo2 {
+    height: 100%;
+    padding-bottom: 70px;
+  }
+}

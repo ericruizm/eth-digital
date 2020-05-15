@@ -1,0 +1,331 @@
+.Wrapper_Encabezado_Aportaciones {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 80px;
+}
+
+.Wrapper_Tabla_Aportaciones {
+  position: relative;
+  margin-left: 160px;
+  margin-right: 35px;
+  margin-top: 60px;
+  padding: 10px 20px 80px 20px;
+  border-radius: 0px 80px 5px 80px;
+  background: linear-gradient(180deg, #282827 0%, #3c3c3b 100%);
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1);
+  /* width */
+}
+
+.Datos_Grid_Aportaciones {
+  display: inline-block;
+  margin: 0px auto;
+  margin-top: 20px;
+  width: 100%;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.Datos_Grid_Retiradas {
+  display: inline-block;
+  margin: 0px auto;
+  margin-top: 20px;
+  width: 100%;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.Datos2 {
+  height: 76.35px;
+  padding: 0px 30px;
+  width: 100%;
+  border-radius: 5px 30px;
+  background: linear-gradient(
+    90deg,
+    rgba(60, 60, 59, 0.2) 0%,
+    rgba(60, 60, 59, 0) 100%
+  );
+  box-shadow: inset 0 20px 20px 0 rgba(0, 0, 0, 0.1);
+  scale: 1;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.Datos2:hover {
+  transform: scale(1.02);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Boton_Cancelar_Aportacion {
+  width: 100px;
+  margin-top: 26px;
+  height: 20.72px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.Boton_Cancelar_Aportacion2 {
+  width: 100px;
+  margin-top: 20px;
+  height: 30px;
+  opacity: 0.3;
+  cursor: pointer;
+  border-radius: 3px 10px;
+  border: 0.5px solid #fff;
+}
+
+.Boton_Cancelar_Aportacion2 h3 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 0.7px;
+  line-height: 19px;
+  margin-bottom: 10px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+}
+
+.Boton_Aportaciones_Marcado {
+  width: 200px;
+  height: 40px;
+  background: #282827;
+  position: absolute;
+  margin-left: 160px;
+  margin-top: 20px;
+  border-radius: 5px 20px 0px 0px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.Boton_Aportaciones_Desmarcado {
+  width: 200px;
+  height: 40px;
+  background: #28282738;
+  position: absolute;
+  margin-left: 160px;
+  margin-top: 20px;
+  border-radius: 5px 20px 0px 0px;
+  cursor: pointer;
+}
+
+.Boton_BalanceDisponible_Marcado {
+  width: 250px;
+  height: 40px;
+  background: #282827;
+  position: absolute;
+  margin-left: 345px;
+  margin-top: 20px;
+  border-radius: 5px 20px 0px 0px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.Boton_BalanceDisponible_Desmarcado {
+  width: 250px;
+  height: 40px;
+  background: #28282738;
+  position: absolute;
+  margin-left: 345px;
+  margin-top: 20px;
+  border-radius: 5px 20px 0px 0px;
+}
+
+.Texto_Boton_Aportaciones {
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 2.67px;
+  line-height: 19px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.Grid_Aportacion_Tipo {
+  display: inline-block;
+  margin: 0px auto;
+  margin-top: 20px;
+  width: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 10px;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+}
+
+.Grid_Aportacion_Tipo img {
+  height: 23.31px;
+  width: 22.91px;
+  margin-bottom: 10px;
+}
+
+.Aportacion_Tipo {
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  line-height: 19px;
+}
+
+.Aportacion_Pendiente {
+  width: 100px;
+  margin-top: 26px;
+  height: 20.72px;
+  color: #b39f38;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  line-height: 19px;
+}
+
+.Aportacion_Rechazada {
+  width: 100px;
+  margin-top: 26px;
+  height: 20.72px;
+  color: #a63232;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  line-height: 19px;
+}
+
+.Grid_Dias_Restantes {
+  width: 125px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 15px;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+}
+.Titulo_Tabla2 {
+  width: 100px;
+  margin-top: 26px;
+  height: 20.72px;
+  opacity: 0.5;
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  line-height: 19px;
+  margin-bottom: 10px;
+
+  cursor: pointer;
+}
+
+.Alerta_Icono {
+  height: 16px;
+  width: 16px;
+  opacity: 0.4;
+  margin-top: 28px;
+
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .Titulo_Tabla2 {
+    width: 95px;
+    font-size: 14px;
+  }
+  .Alerta {
+    right: 60px;
+  }
+  .Grid_Aportacion_Tipo {
+    width: 95px;
+  }
+
+  .Aportacion_Tipo {
+    font-size: 14px;
+  }
+
+  .Aportacion_Pendiente {
+    width: 95px;
+    font-size: 14px;
+  }
+  .Aportacion_Rechazada {
+    width: 95px;
+    font-size: 14px;
+  }
+  .Wrapper_Tabla_Aportaciones {
+    margin-left: 35px;
+  }
+  .Datos_Grid_Aportaciones {
+    grid-gap: 20px;
+  }
+  .Boton_Aportaciones_Marcado {
+    margin-left: 35px;
+  }
+
+  .Boton_Aportaciones_Desmarcado {
+    margin-left: 35px;
+  }
+
+  .Boton_BalanceDisponible_Marcado {
+    margin-left: 220px;
+  }
+
+  .Boton_BalanceDisponible_Desmarcado {
+    margin-left: 220px;
+  }
+  .Datos_Grid_Retiradas {
+    grid-gap: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Titulo_Tabla2 {
+    width: 80px;
+    font-size: 13px;
+  }
+  .Datos_Grid_Retiradas {
+    grid-gap: 20px;
+  }
+  .Grid_Aportacion_Tipo {
+    width: 70px;
+  }
+
+  .Aportacion_Tipo {
+    font-size: 13px;
+  }
+
+  .Aportacion_Pendiente {
+    width: 70px;
+    font-size: 13px;
+  }
+  .Aportacion_Rechazada {
+    width: 70px;
+    font-size: 13px;
+  }
+  .Wrapper_Tabla_Aportaciones {
+    margin-left: 35px;
+    border-radius: 0px 40px 5px 80px;
+  }
+  .Datos_Grid_Aportaciones {
+    grid-gap: 20px;
+  }
+  .Boton_Aportaciones_Marcado {
+    margin-left: 35px;
+    width: 130px;
+  }
+
+  .Boton_Aportaciones_Desmarcado {
+    margin-left: 35px;
+    width: 130px;
+  }
+
+  .Boton_BalanceDisponible_Marcado {
+    margin-left: 160px;
+    width: 180px;
+  }
+
+  .Boton_BalanceDisponible_Desmarcado {
+    margin-left: 160px;
+    width: 180px;
+  }
+  .Texto_Boton_Aportaciones {
+    font-size: 10px;
+  }
+}

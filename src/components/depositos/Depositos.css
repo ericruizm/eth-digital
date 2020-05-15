@@ -1,0 +1,590 @@
+.Depositos_Retiradas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  backdrop-filter: blur(4px);
+  background: transparent;
+}
+
+.Wrapper_Depositos {
+  padding-top: 100px;
+  padding-left: 22%;
+  padding-right: 15%;
+}
+
+.Rectangulo_Depositos {
+  height: 520px;
+  width: 824px;
+  padding: 0px 30px;
+  width: 100%;
+  border-radius: 5px 40px 5px 200px;
+  background: linear-gradient(43deg, #917942 0%, #b39f6b 77%, #e8dbac 100%);
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.15);
+}
+
+.Titulo_Redhawk {
+  height: 23px;
+  width: 118px;
+  padding-top: 35px;
+  color: #3c3c3b;
+  font-size: 20px;
+  letter-spacing: 3.33px;
+  line-height: 23px;
+  text-align: center;
+  margin-left: 15%;
+  margin-bottom: 20px;
+}
+
+.Boton_Cerrar {
+  margin-top: 35px;
+  margin-left: 55%;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 40px;
+  background: #91794257;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+.Boton_Cerrar:hover {
+  background: #917942c7;
+}
+.X_popup {
+  height: 20px;
+  width: 20px;
+  z-index: 200;
+}
+
+.QR {
+  align-items: center;
+  position: absolute;
+  margin-left: 40%;
+  margin-top: 100px;
+  height: 180px;
+  padding: 30px 20px;
+  width: 180px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  transform: scale(1);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.QR:hover {
+  transform: scale(1.1);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.QR_Imagen {
+  display: inline-block;
+  margin: auto;
+}
+
+.Form_Depositos_Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 375px;
+  margin-left: 15%;
+}
+
+.Form_Depositos_Wrapper2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 375px;
+  margin-left: 15%;
+  margin-top: -30px;
+}
+
+.ETH {
+  margin-top: 68px;
+}
+.ETH2 {
+  margin-top: 47px;
+}
+
+.ETH h3 {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1.29px;
+  line-height: 26px;
+  text-align: center;
+}
+.ETH2 h3 {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1.29px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.Form_Depositos {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.Form_Depositos input {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-weight: 400;
+}
+
+.Form_Depositos label {
+  position: absolute;
+  left: 0%;
+  bottom: -8px;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.404);
+}
+
+.Form_Depositos label::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.856);
+  bottom: -1px;
+  left: 0%;
+  transform: translateX(-101%);
+  transition: transform 0.3s ease;
+}
+
+.Form_Depositos span {
+  color: rgba(255, 255, 255, 0.404);
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.content-name {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.Form_Depositos input:focus + .label-name .content-name,
+.Form_Depositos input:valid + .label-name .content-name {
+  transform: translateY(-80%);
+  font-size: 14px;
+}
+
+.Form_Depositos input:focus + .label-name::after,
+.Form_Depositos input:valid + .label-name::after {
+  transform: translateX(0%);
+}
+
+.Form_Depositos2 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.Form_Depositos2 input {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-weight: 400;
+}
+
+.Form_Depositos2 label {
+  position: absolute;
+  left: 0%;
+  bottom: -8px;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.404);
+}
+
+.Form_Depositos2 label::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.856);
+  bottom: -1px;
+  left: 0%;
+  transform: translateX(-101%);
+  transition: transform 0.3s ease;
+}
+
+.Form_Depositos2 span {
+  color: rgba(255, 255, 255, 0.404);
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.content-name {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.Form_Depositos2 input:focus + .label-name .content-name,
+.Form_Depositos2 input:valid + .label-name .content-name {
+  transform: translateY(-80%);
+  font-size: 14px;
+}
+
+.Form_Depositos2 input:focus + .label-name::after,
+.Form_Depositos2 input:valid + .label-name::after {
+  transform: translateX(0%);
+}
+
+.Wrapper_Boton {
+  margin-top: 50px;
+  width: 100%;
+  height: 200px;
+}
+
+.Botones_Grid {
+  justify-content: center;
+  width: 70%;
+  height: 60px;
+  justify-items: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.Boton_Depositar {
+  border-radius: 5px 20px 5px 80px;
+  background: linear-gradient(90deg, rgba(189, 189, 189, 0.1) 0%, #baae91 100%);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  height: 100%;
+  width: 100%;
+  padding: 12px 75px 10px 75px;
+  text-align: center;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  scale: 1;
+}
+
+.Boton_Depositar:hover {
+  transform: scale(1.05);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Boton_Retirar {
+  border-radius: 20px 5px 80px;
+  background: linear-gradient(270deg, #a9986f 0%, #baae91 100%);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  height: 100%;
+  width: 100%;
+  padding: 12px 85px 10px 85px;
+  text-align: center;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  scale: 1;
+}
+
+.Boton_Retirar:hover {
+  transform: scale(1.05);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Grid_Boton_Depositar {
+  padding-top: 4px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 30px;
+  width: 100%;
+  justify-content: center;
+}
+
+.Depositos_popup {
+  height: 20px;
+  width: 20px;
+  margin-top: 4px;
+}
+
+.Retiradas_popup {
+  height: 20px;
+  width: 20px;
+  margin-top: 4px;
+  transform: rotate(180deg);
+}
+
+.Grid_Boton_Retirar {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 15px;
+  width: 80%;
+  justify-content: center;
+  margin-right: 20%;
+}
+
+.Retiradas_popup {
+  height: 20px;
+  width: 20px;
+  transform: rotate(180deg);
+  margin-top: 1px;
+}
+
+.Direccion_Billetera {
+  margin-top: 50px;
+  margin-left: 15%;
+  height: 52px;
+  width: 382px;
+  opacity: 0.5;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.Billetera {
+  opacity: 0.5;
+  color: #f2f2f2;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 3.33px;
+  line-height: 23px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 52px;
+}
+
+.Direccion_Billetera_USDC {
+  margin-top: 2px;
+  height: 14px;
+  opacity: 0.5;
+  color: #fff;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 0.71px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.Padding_Direccion_Retirada {
+  padding-top: 60px;
+}
+
+.Direccion_Retirada {
+  margin-left: 15%;
+  height: 52px;
+  width: 382px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.Grid_Direccion_Retirada {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  grid-gap: 85px;
+}
+
+.Saldo_Disponible {
+  color: #f2f2f2;
+  font-size: 20px;
+  letter-spacing: 3.33px;
+  line-height: 23px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 52px;
+}
+
+.Texto_Saldo_Disponible {
+  color: #f2f2f2;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  line-height: 52px;
+}
+.Cantidad_Minima {
+  margin-left: 15%;
+  color: #fff;
+  font-weight: 300;
+  font-size: 11px;
+  letter-spacing: 0.65px;
+  line-height: 13px;
+}
+
+.Confirmar_Deposito {
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 1.29px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.Alerta_Retirada {
+  position: relative;
+  float: right;
+  margin-top: -30px;
+}
+
+.Alerta_Retirada_Icono {
+  height: 16px;
+  width: 16px;
+}
+
+@media (max-width: 1300px) {
+  .Wrapper_Depositos {
+    padding-top: 100px;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+
+  .Rectangulo_Depositos {
+    height: 740px;
+  }
+
+  .QR {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  .Padding_QR {
+    padding-top: 50px;
+  }
+
+  .Boton_Cerrar {
+    margin-left: 65%;
+  }
+  .Form_Depositos_Wrapper2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Form_Depositos_Wrapper {
+    margin: 0 auto;
+  }
+  .Wrapper_Cantidad_Minima {
+    width: 375px;
+    margin: 0 auto;
+  }
+  .Cantidad_Minima {
+    margin-left: 0%;
+  }
+  .Direccion_Billetera {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Direccion_Retirada {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Botones_Grid {
+    width: 70%;
+  }
+  .Grid_Boton_Depositar {
+    grid-gap: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  .Confirmar_Deposito {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 900px) {
+  .Wrapper_Depositos {
+    padding-top: 100px;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .Rectangulo_Depositos {
+    height: 740px;
+  }
+
+  .QR {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  .Padding_QR {
+    padding-top: 50px;
+  }
+
+  .Boton_Cerrar {
+    margin-left: 65%;
+  }
+  .Form_Depositos_Wrapper2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Form_Depositos_Wrapper {
+    margin: 0 auto;
+  }
+  .Wrapper_Cantidad_Minima {
+    width: 375px;
+    margin: 0 auto;
+  }
+  .Cantidad_Minima {
+    margin-left: 0%;
+  }
+  .Direccion_Billetera {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Direccion_Retirada {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Botones_Grid {
+    width: 85%;
+  }
+  .Grid_Boton_Depositar {
+    grid-gap: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+  .Confirmar_Deposito {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Wrapper_Depositos {
+    padding-top: 100px;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .Rectangulo_Depositos {
+    height: 750px;
+  }
+  .Botones_Grid {
+    width: 90%;
+  }
+  .Grid_Boton_Depositar {
+    grid-gap: 10px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 4px;
+  }
+  .Confirmar_Deposito {
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+}

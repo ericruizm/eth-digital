@@ -1,0 +1,45 @@
+.Alerta_Wrapper2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 800;
+  background: transparent;
+}
+
+.Wrapper_Rectangulo_Alerta2 {
+  padding-top: 245px;
+}
+
+.Rectangulo_Alerta2 {
+  height: 130.19px;
+  width: 199.5px;
+  background-color: #c8c8c8;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 5px 40px 5px 40px;
+  margin-left: 45%;
+  margin-right: auto;
+}
+
+.Texto_Alerta2 {
+  height: 56px;
+  width: 174px;
+  color: #3c3c3b;
+  font-size: 10px;
+  letter-spacing: 1px;
+  line-height: 12px;
+  text-align: justify;
+  padding-left: 27px;
+  padding-top: 25px;
+}
+
+@media (max-width: 1300px) {
+  .Wrapper_Rectangulo_Alerta2 {
+    padding-top: 470px;
+  }
+}
+
+@media (max-width: 900px) {
+}
+
+@media (max-width: 500px) {
+}

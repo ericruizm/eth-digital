@@ -1,0 +1,353 @@
+.PantallaMenu {
+  width: fit-content;
+  height: fit-content;
+}
+
+.MenuEstado {
+  width: 136px;
+  height: 100%;
+  background-color: #2d2d2c;
+  color: WHITE;
+  position: fixed;
+  animation: CerrarMenu 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  z-index: 3;
+}
+
+.MenuEstatico {
+  width: 136px;
+  height: 100%;
+  background-color: #2d2d2c;
+  color: WHITE;
+  position: fixed;
+  z-index: 3;
+}
+
+.MenuEstadoFinal {
+  animation: AbrirMenu 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  width: 250px;
+  height: 100%;
+  background-color: #2d2d2c;
+  color: white;
+  position: fixed;
+  box-shadow: 0 60px 30px rgba(0, 0, 0, 0.25);
+  z-index: 3;
+}
+
+.MenuEstadoFinal2 {
+  width: 250px;
+  height: 100%;
+  background-color: #2d2d2c;
+  color: white;
+  position: fixed;
+  box-shadow: 0 60px 30px rgba(0, 0, 0, 0.25);
+  z-index: 3;
+}
+
+.Menu {
+  height: auto;
+  width: 136px;
+  margin: 30px 0px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: repeat(1, auto);
+  align-items: center;
+  justify-items: center;
+}
+
+.RHK_Icono {
+  position: absolute;
+  bottom: 0;
+  height: auto;
+  width: 136px;
+  margin: 0px 0px 40px 0px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: repeat(1, auto);
+  align-items: center;
+  justify-items: center;
+  z-index: 30;
+}
+.RHK_Icono2 {
+  position: absolute;
+  bottom: 0;
+  height: auto;
+  width: 136px;
+  margin: 0px 0px 40px 0px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: repeat(1, auto);
+  align-items: center;
+  justify-items: center;
+  z-index: 30;
+}
+
+.Grid_RHK {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 15px;
+  align-items: center;
+  justify-items: left;
+  cursor: pointer;
+  margin-left: 43.3px;
+}
+
+.RHK_Logo {
+  height: 50px;
+  width: 50px;
+}
+
+.Redhawk_Texto {
+  margin-top: 10px;
+  font-weight: 300;
+  height: 35%;
+  color: #806d4f;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 3px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.MenuGroup {
+  height: 400px;
+  width: 136px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  align-items: center;
+  justify-items: center;
+}
+.MenuGroupFinal {
+  height: 400px;
+  width: 100%;
+
+  text-align: center;
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  align-items: center;
+  justify-items: center;
+}
+
+.Logo {
+  height: 30px;
+  width: 30px;
+}
+
+.LogoFinal {
+  height: 30px;
+  width: 30px;
+}
+
+.Linea {
+  width: 100%;
+  height: 29px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.LineaFinal {
+  width: 100%;
+  height: 29px;
+  opacity: 0.3;
+  display: grid;
+  grid-template-columns: 58.3px 50px 0px;
+  align-items: center;
+  justify-items: left;
+  cursor: pointer;
+}
+
+.LineaFinal2 {
+  width: 100%;
+  height: 29px;
+  opacity: 0.3;
+  display: grid;
+  grid-template-columns: 58.3px 50px 0px;
+  align-items: center;
+  justify-items: left;
+  cursor: pointer;
+}
+
+.LineaPagina {
+  width: 100%;
+  height: 29px;
+  opacity: 1;
+  border-left: 1.5px solid white;
+  cursor: pointer;
+}
+.LineaPaginaFinal {
+  width: 100%;
+  height: 29px;
+  opacity: 1;
+  display: grid;
+  grid-template-columns: 58.3px 50px 0px;
+  align-items: center;
+  justify-items: left;
+  border-left: 1.5px solid white;
+  cursor: pointer;
+}
+.Linea:hover {
+  border-left: 1.5px solid white;
+  transition: transform 0.3s ease;
+  opacity: 1;
+}
+
+.LineaFinal:hover {
+  border-left: 1.5px solid white;
+  transition: transform 0.3s ease;
+  opacity: 1;
+}
+
+.LineaFinal2:hover {
+  border-left: 1.5px solid white;
+  transition: transform 0.3s ease;
+  opacity: 1;
+}
+
+.menuH2 {
+  font-size: 19px;
+  font-weight: 300;
+  height: 35%;
+  animation: AbrirLetras 1.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  color: white;
+}
+
+.menuH2 {
+  font-size: 19px;
+  font-weight: 300;
+  height: 35%;
+  color: white;
+}
+
+.menuH2 {
+  font-size: 19px;
+  font-weight: 500;
+  height: 35%;
+  color: white;
+  animation: AbrirLetras 1.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Espacio {
+  height: 10px;
+}
+
+.Inicio {
+  height: 20px;
+  width: 20px;
+}
+
+.Depositos {
+  height: 20px;
+  width: 20px;
+}
+
+.Retiradas {
+  height: 20px;
+  width: 20px;
+  transform: rotate(90deg);
+}
+
+.Tutoriales {
+  height: 20px;
+  width: 20px;
+}
+
+.Ajustes {
+  height: 20px;
+  width: 20px;
+}
+
+@keyframes AbrirMenu {
+  from {
+    width: 136px;
+  }
+  to {
+    width: 250px;
+  }
+}
+
+@keyframes CerrarMenu {
+  from {
+    width: 250px;
+  }
+  to {
+    width: 136px;
+  }
+}
+
+@keyframes AbrirLetras {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 750px) {
+  @keyframes AbrirMenu {
+    from {
+      width: 0px;
+    }
+    to {
+      width: 250px;
+    }
+  }
+
+  .LineaFinal {
+    grid-template-columns: 40px 50px 0px;
+  }
+
+  .Menu {
+    width: 100px;
+  }
+  .RHK_Icono {
+    width: 0%;
+    height: 0%;
+    position: absolute;
+  }
+  .RHK_Logo {
+    width: 0%;
+    height: 0%;
+    position: absolute;
+  }
+
+  .MenuEstado {
+    width: 0%;
+    height: 0%;
+    position: absolute;
+  }
+
+  .MenuEstatico {
+    width: 0%;
+    height: 0%;
+    position: absolute;
+  }
+
+  .MenuEstadoFinal {
+    position: absolute;
+  }
+  .MenuGroup {
+    height: 0%;
+    width: 0%;
+  }
+  .Linea img {
+    height: 0%;
+    width: 0%;
+  }
+
+  .LineaPagina img {
+    height: 0%;
+    width: 0%;
+  }
+
+  .LineaPagina {
+    height: 0%;
+    width: 0%;
+  }
+  .LineaPaginaFinal {
+    grid-template-columns: 40px 50px 0px;
+  }
+  .LineaFinal2 {
+    grid-template-columns: 40px 50px 0px;
+  }
+}
