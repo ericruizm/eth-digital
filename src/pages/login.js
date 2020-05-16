@@ -1,5 +1,6 @@
-import React from 'react';
-import '../components/login.css';
+import React from "react";
+import "../components/login.css";
+import { Link } from "react-router-dom";
 
 class Login extends React.Component {
   constructor(props) {
@@ -7,7 +8,7 @@ class Login extends React.Component {
 
     this.state = {
       hidden: true,
-      password: '',
+      password: "",
     };
     this.handlePasswordChange = this.handlePasswordChange.bind(this);
     this.toggleShow = this.toggleShow.bind(this);
@@ -37,14 +38,14 @@ class Login extends React.Component {
               <div className="form">
                 <input type="text" name="name" autoComplete="off" required />
                 <label htmlFor="name" className="label-name">
-                  <span className="content-name">Email</span>
+                  <span className="content-name"> Email </span>
                 </label>
               </div>
             </div>
             <div className="Wrapper2">
               <div className="form">
                 <input
-                  type={this.state.hidden ? 'password' : 'text'}
+                  type={this.state.hidden ? "password" : "text"}
                   name="name"
                   autoComplete="off"
                   required
@@ -52,21 +53,22 @@ class Login extends React.Component {
                   onChange={this.handlePasswordChange}
                 />
                 <label htmlFor="name" className="label-name">
-                  <span className="content-name">Contraseña</span>
+                  <span className="content-name"> Contraseña </span>
                 </label>
                 <div className="Image">
                   <img
                     src={require(this.state.hidden
-                      ? '../images/eye.svg'
-                      : '../images/eye-off.svg')}
+                      ? "../images/eye.svg"
+                      : "../images/eye-off.svg")}
                     onClick={this.toggleShow}
                   />
                 </div>
               </div>
             </div>
-
-            <div to="/">Iniciar Sesión</div>
-            <h3>¿Has olvidado la contraseña?</h3>
+            <Link className="Boton_LogIn" to="/home">
+              Iniciar Sesión
+            </Link>
+            <h3>¿Has olvidado la contraseña ?</h3>
           </div>
         </div>
       </div>

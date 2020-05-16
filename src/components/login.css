@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 body {
   font-family: Roboto;
@@ -16,7 +16,7 @@ a {
 
 .Login {
   height: 920px;
-  background: url('../images/Fondo8.png');
+  background: url("../images/Fondo8.png");
   background-size: cover;
   justify-content: center;
   justify-items: center;
@@ -31,7 +31,7 @@ a {
 .LogoEagle {
   height: 59px;
   width: 100%;
-  background: url('../images/EG_Imago_H_Oro.png');
+  background: url("../images/EG_Imago_H_Oro.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -47,7 +47,7 @@ a {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
 .Login h3 {
-  margin: 40px;
+  margin: 28px;
   color: rgba(255, 255, 255, 0.404);
   font-size: 13px;
   line-height: 1.2;
@@ -116,7 +116,7 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.404);
 }
 .form label::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   width: 100%;
@@ -155,6 +155,45 @@ a {
   position: absolute;
   bottom: 10px;
   left: 88%;
+}
+
+.Boton_LogIn {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  background: rgba(60, 60, 59, 1);
+  padding: 13px 60px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 5px;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  width: 68%;
+  margin: 0 auto;
+}
+
+.Boton_LogIn:hover {
+  background: #ffffffd8;
+  color: #3c3c3b;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+select:-webkit-autofill:active {
+  border: none;
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  -webkit-filter: opacity(0.3);
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0) inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 @media (max-width: 640px) {

@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import "./Inicio.css";
 
 const Resumen = () => (
   <div className="Wrapper_Rectangulo">

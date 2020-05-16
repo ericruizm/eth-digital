@@ -152,7 +152,7 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-gap: 10px;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   text-align: center;
   justify-items: center;
@@ -176,6 +176,16 @@
   margin-top: 26px;
   height: 20.72px;
   color: #b39f38;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  line-height: 19px;
+}
+
+.Aportacion_Aprobada {
+  width: 100px;
+  margin-top: 26px;
+  height: 20.72px;
+  color: #32803d;
   font-size: 16px;
   letter-spacing: 0.7px;
   line-height: 19px;
@@ -245,6 +255,10 @@
     width: 95px;
     font-size: 14px;
   }
+  .Aportacion_Aprobada {
+    width: 95px;
+    font-size: 14px;
+  }
   .Aportacion_Rechazada {
     width: 95px;
     font-size: 14px;
@@ -292,6 +306,10 @@
   }
 
   .Aportacion_Pendiente {
+    width: 70px;
+    font-size: 13px;
+  }
+  .Aportacion_Aprobada {
     width: 70px;
     font-size: 13px;
   }
