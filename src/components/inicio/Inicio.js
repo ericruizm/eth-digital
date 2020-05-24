@@ -1,12 +1,12 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './Inicio.css';
-import { connect } from 'react-redux';
-import Resumen from './Resumen';
-import Encabezado from './Encabezado';
-import Historial from './Historial';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./Inicio.css";
+import { connect } from "react-redux";
+import Resumen from "./Resumen";
+import Encabezado from "./Encabezado";
+import Historial from "./Historial";
 
-import MenuLateral from '../menulateral/MenuLateral';
+import MenuLateral from "../menulateral/MenuLateral";
 
 const mapStateToProps = (state) => ({
   inicio: state.reducerInicio,

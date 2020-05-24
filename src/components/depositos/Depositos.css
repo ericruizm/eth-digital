@@ -157,7 +157,7 @@
 }
 
 .Form_Depositos label::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   width: 100%;
@@ -223,7 +223,7 @@
 }
 
 .Form_Depositos2 label::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   width: 100%;
@@ -287,6 +287,7 @@
 
 .Boton_Depositar:hover {
   transform: scale(1.05);
+  background: linear-gradient(90deg, rgba(219, 217, 217, 0.1) 0%, #c4b89e 100%);
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
@@ -420,7 +421,7 @@
   line-height: 52px;
 }
 .Cantidad_Minima {
-  margin-left: 15%;
+  margin-right: 100px;
   color: #fff;
   font-weight: 300;
   font-size: 11px;
@@ -448,6 +449,9 @@
 }
 
 @media (max-width: 1300px) {
+  .Depositos_Retiradas {
+    height: 160%;
+  }
   .Wrapper_Depositos {
     padding-top: 100px;
     padding-left: 12%;
@@ -542,7 +546,7 @@
     margin: 0 auto;
   }
   .Cantidad_Minima {
-    margin-left: 0%;
+    margin-right: 0px;
   }
   .Direccion_Billetera {
     margin-left: auto;
@@ -572,7 +576,7 @@
     padding-right: 4%;
   }
   .Rectangulo_Depositos {
-    height: 750px;
+    height: 800px;
   }
   .Botones_Grid {
     width: 90%;
@@ -586,5 +590,49 @@
   .Confirmar_Deposito {
     font-size: 13px;
     text-transform: uppercase;
+  }
+  .Form_Depositos_Wrapper {
+    margin: 0 auto;
+    width: 320px;
+  }
+  .Form_Depositos_Wrapper2 {
+    margin: 0 auto;
+    width: 320px;
+  }
+  .Direccion_Billetera {
+    width: 330px;
+  }
+  .Billetera {
+    font-size: 16px;
+  }
+  .Confirmar_Deposito {
+    font-size: 12px;
+  }
+  .Grid_Boton_Depositar {
+    grid-gap: 20px;
+    width: 100%;
+  }
+  .Boton_Depositar {
+    padding: 12px 30px 12px 30px;
+    text-align: center;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    scale: 1;
+  }
+  .Direccion_Retirada {
+    width: 330px;
+  }
+  .Saldo_Disponible {
+    font-size: 15px;
+  }
+
+  .Texto_Saldo_Disponible {
+    font-size: 12px;
+  }
+  .Grid_Direccion_Retirada {
+    grid-gap: 40px;
+  }
+  .Boton_Cerrar {
+    margin-top: 30px;
+    margin-left: 70%;
   }
 }

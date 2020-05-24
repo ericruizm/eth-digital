@@ -39,6 +39,9 @@
 .Cantidades2:hover {
   transform: scale(1.06);
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  background-color: rgba(18, 18, 18, 0.17);
+
+  /* linea a cambiar */
 }
 
 .Cantidades_Grid {

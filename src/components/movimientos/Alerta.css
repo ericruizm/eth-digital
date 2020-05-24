@@ -1,15 +1,14 @@
 .Alerta_Wrapper {
   position: absolute;
   width: 100%;
-  height: 120%;
+  height: 100%;
   z-index: 50;
-  backdrop-filter: blur(4px);
   background: transparent;
   background: transparent;
 }
 
 .Wrapper_Rectangulo_Alerta {
-  padding-top: 450px;
+  padding-top: 440px;
 }
 
 .Rectangulo_Alerta {

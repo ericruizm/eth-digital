@@ -1,0 +1,135 @@
+.Wrapper_Logout_Rectangulo {
+  padding-top: 100px;
+  padding-left: 160px;
+  padding-right: 35px;
+  position: fixed;
+  z-index: 80;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.LogOut_Rectangulo {
+  height: 100%;
+  width: 100%;
+  padding: 0px 120px 100px 120px;
+  border-radius: 5px 40px 5px 140px;
+  background: linear-gradient(218.9deg, #323231 0%, #4f4f4e 81%, #5e5e5e 100%);
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.15);
+  margin: auto;
+}
+
+.Titulo_LogOut {
+  padding-top: 120px;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+.Grid_Botones_LogOut {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  grid-gap: 20px;
+}
+
+.Boton_Salir_LogOut {
+  height: 60px;
+  width: 274px;
+  border-radius: 20px 5px 80px;
+  background-color: #6b6b6b;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+  line-height: 60px;
+  text-align: center;
+  padding-right: 10px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Boton_Salir_LogOut:hover {
+  transform: scale(1.04);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  background-color: #868484;
+}
+
+.Boton_Cancelar_LogOut {
+  height: 60px;
+  width: 274px;
+  border-radius: 5px 20px 5px 80px;
+  background-color: #6b6b6b79;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-weight: 200;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+  line-height: 60px;
+  text-align: center;
+  padding-left: 10px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Boton_Cancelar_LogOut:hover {
+  transform: scale(1.04);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  background-color: #85828279;
+}
+
+@media (max-width: 1300px) {
+  .LogOut_Rectangulo {
+    padding: 0px 70px 100px 70px;
+  }
+}
+@media (max-width: 900px) {
+  .LogOut_Rectangulo {
+    padding: 0px 30px 100px 30px;
+  }
+  .Boton_Salir_LogOut {
+    height: 60px;
+    width: 230px;
+  }
+  .Boton_Cancelar_LogOut {
+    height: 60px;
+    width: 230px;
+  }
+}
+
+@media (max-width: 750px) {
+  .Wrapper_Logout_Rectangulo {
+    padding-left: 35px;
+  }
+  .LogOut_Rectangulo {
+    padding: 0px 50px 100px 50px;
+  }
+  .Boton_Salir_LogOut {
+    height: 60px;
+    width: 150px;
+    font-size: 17px;
+  }
+  .Boton_Cancelar_LogOut {
+    height: 60px;
+    width: 150px;
+    font-size: 17px;
+  }
+  .Titulo_LogOut {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Wrapper_LogOut_Rectangulo {
+    padding-left: 35px;
+  }
+  .LogOut_Rectangulo {
+    height: 100%;
+    padding: 0px 40px 100px 40px;
+  }
+}

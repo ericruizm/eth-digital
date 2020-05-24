@@ -78,7 +78,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.404);
 }
 .form3 label::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   width: 100%;
@@ -155,7 +155,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.404);
 }
 .form_prefijo label::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   width: 100%;
@@ -221,7 +221,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.404);
 }
 .form_telefono label::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   width: 100%;
@@ -263,6 +263,14 @@
   border-radius: 5px 20px 5px 80px;
   background: linear-gradient(355.12deg, #4d4839 0%, #af9760 100%);
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  scale: 1;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Boton_Actualizar:hover {
+  transform: scale(1.02);
+  background: linear-gradient(355.12deg, #4d4839 0%, #bba46d 100%);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .Actualizar {
@@ -317,7 +325,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.404);
 }
 .form_nombre label::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   width: 100%;
@@ -397,7 +405,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.404);
 }
 .form4 label::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   width: 100%;
@@ -452,6 +460,7 @@
   margin-top: 20px;
   border-radius: 5px 20px 0px 0px;
   cursor: pointer;
+  opacity: 0.6;
 }
 .Texto_Boton_DatosUser {
   color: #fff;
@@ -466,7 +475,7 @@
 }
 
 .Boton_DatosPer_Marcado {
-  width: 200px;
+  width: 240px;
   height: 40px;
   background: #282827;
   position: absolute;
@@ -478,14 +487,14 @@
   z-index: 2;
 }
 .Boton_DatosPer_Desmarcado {
-  width: 200px;
+  width: 240px;
   height: 40px;
   background: #28282738;
   position: absolute;
   margin-left: 355px;
   margin-top: 20px;
   border-radius: 5px 20px 0px 0px;
-
+  opacity: 0.6;
   cursor: pointer;
 }
 .Texto_Boton_DatosPer {
@@ -504,10 +513,11 @@
   height: 40px;
   background: #28282738;
   position: absolute;
-  margin-left: 550px;
+  margin-left: 580px;
   margin-top: 20px;
   border-radius: 5px 20px 0px 0px;
   cursor: pointer;
+  opacity: 0.6;
 }
 
 .Boton_Contrasena_Marcado {
@@ -515,7 +525,7 @@
   height: 40px;
   background: #282827;
   position: absolute;
-  margin-left: 550px;
+  margin-left: 580px;
   margin-top: 20px;
   border-radius: 5px 20px 0px 0px;
   cursor: pointer;
@@ -532,7 +542,10 @@
   text-transform: uppercase;
   cursor: pointer;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+  .Wrapper_Ajustes {
+    border-radius: 0px 40px 5px 80px;
+  }
   .Texto_Correo_Electronico {
     width: 100%;
     opacity: 0.8;
@@ -565,27 +578,38 @@
   }
   .Boton_DatosUser_Marcado {
     margin-left: 160px;
-    width: 200x;
+    width: 160px;
   }
   .Boton_DatosUser_Desmarcado {
     margin-left: 160px;
-    width: 200px;
+    width: 160px;
   }
+
   .Boton_DatosPer_Marcado {
-    margin-left: 350px;
+    margin-left: 320px;
     width: 200px;
   }
   .Boton_DatosPer_Desmarcado {
-    margin-left: 350px;
+    margin-left: 320px;
     width: 200px;
   }
+
   .Boton_Contrasena_Marcado {
-    margin-left: 540px;
-    width: 200px;
+    margin-left: 510px;
+    width: 160px;
   }
   .Boton_Contrasena_Desmarcado {
-    margin-left: 540px;
-    width: 200px;
+    margin-left: 510px;
+    width: 160px;
+  }
+  .Texto_Boton_Contrasena {
+    font-size: 10px;
+  }
+  .Texto_Boton_DatosPer {
+    font-size: 10px;
+  }
+  .Texto_Boton_DatosUser {
+    font-size: 10px;
   }
 }
 
@@ -599,7 +623,6 @@
     width: 100px;
   }
   .Texto_Boton_DatosUser {
-    font-size: 10px;
     width: 80px;
     padding-top: 5px;
     padding-left: 10px;
@@ -608,6 +631,7 @@
     text-align: left;
     vertical-align: middle;
     line-height: 15px;
+    font-size: 9px;
   }
   .Boton_DatosPer_Marcado {
     margin-left: 130px;
@@ -618,7 +642,7 @@
     width: 100px;
   }
   .Texto_Boton_DatosPer {
-    font-size: 10px;
+    font-size: 9px;
     width: 80px;
     padding-top: 5px;
     padding-left: 10px;
@@ -689,6 +713,10 @@
   .Boton_Actualizar {
     width: 300px;
   }
+  .Actualizar {
+    color: #fff;
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -731,11 +759,11 @@
     line-height: 15px;
   }
   .Boton_Contrasena_Marcado {
-    margin-left: 225px;
+    margin-left: 228px;
     width: 100px;
   }
   .Boton_Contrasena_Desmarcado {
-    margin-left: 225px;
+    margin-left: 228px;
     width: 100px;
   }
   .Texto_Boton_Contrasena {
@@ -798,5 +826,17 @@
   }
   .Boton_Actualizar {
     width: 300px;
+  }
+  .Texto_Boton_DatosUser {
+    font-size: 8px;
+    text-align: center;
+  }
+  .Texto_Boton_DatosPer {
+    font-size: 8px;
+    text-align: center;
+  }
+  .Texto_Boton_Contrasena {
+    font-size: 8px;
+    text-align: center;
   }
 }

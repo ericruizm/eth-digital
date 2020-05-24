@@ -11,12 +11,12 @@
 }
 
 .Rectangulo_Alerta2 {
-  height: 130.19px;
+  height: 110.19px;
   width: 199.5px;
   background-color: #c8c8c8;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
   border-radius: 5px 40px 5px 40px;
-  margin-left: 45%;
+  margin-left: 44%;
   margin-right: auto;
 }
 
@@ -39,6 +39,12 @@
 }
 
 @media (max-width: 900px) {
+  .Wrapper_Rectangulo_Alerta2 {
+    padding-top: 500px;
+  }
+  .Rectangulo_Alerta2 {
+    margin-left: 40%;
+  }
 }
 
 @media (max-width: 500px) {

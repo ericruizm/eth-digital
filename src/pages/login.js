@@ -1,6 +1,9 @@
 import React from "react";
 import "../components/login.css";
+import "../components/consulta/consulta.css";
 import { Link } from "react-router-dom";
+import ConsultaLogin from "../components/consulta/ConsultaLogin";
+import AlertaConsultaLogin from "../components/consulta/AlertaConsultaLogin";
 
 class Login extends React.Component {
   constructor(props) {
@@ -35,8 +38,8 @@ class Login extends React.Component {
           <div className="LogoEagle" />
           <div className="FormGroup">
             <div className="Wrapper1">
-              <div className="form">
-                <input type="text" name="name" autoComplete="off" required />
+              <div className="form" autocomplete="nope">
+                <input type="text" name="name" autocomplete="nope" required />
                 <label htmlFor="name" className="label-name">
                   <span className="content-name"> Email </span>
                 </label>
@@ -47,7 +50,7 @@ class Login extends React.Component {
                 <input
                   type={this.state.hidden ? "password" : "text"}
                   name="name"
-                  autoComplete="off"
+                  autocomplete="nope"
                   required
                   value={this.state.password}
                   onChange={this.handlePasswordChange}
@@ -65,12 +68,23 @@ class Login extends React.Component {
                 </div>
               </div>
             </div>
-            <Link className="Boton_LogIn" to="/home">
+            <Link
+              style={{ textDecoration: "none" }}
+              className="Boton_LogIn"
+              to="/home"
+            >
               Iniciar Sesión
             </Link>
             <h3>¿Has olvidado la contraseña ?</h3>
           </div>
         </div>
+        <div className="Redhawk_LogIn">
+          <img
+            src={require("../components/menulateral/images/REDHAWK Icon.png")}
+          />
+        </div>
+        {/* <AlertaConsultaLogin />
+        <ConsultaLogin /> */}
       </div>
     );
   }

@@ -1,5 +1,5 @@
-import React from 'react';
-import Ajustar from './Ajustar';
+import React from "react";
+import Ajustar from "./Ajustar";
 
 const Ajustes = (props) => (
   <div>
@@ -9,6 +9,7 @@ const Ajustes = (props) => (
         AbrirDatosPersonales={props.AbrirDatosPersonales}
         AbrirDatosUser={props.AbrirDatosUser}
         ajustes={props.ajustes}
+        AbrirAviso={props.AbrirAviso}
       />
     </div>
   </div>

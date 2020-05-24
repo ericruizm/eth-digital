@@ -207,7 +207,7 @@
   font-size: 19px;
   font-weight: 300;
   height: 35%;
-  animation: AbrirLetras 1.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  /* animation: AbrirLetras 1.4s cubic-bezier(0.2, 0.8, 0.2, 1); */
   color: white;
 }
 
@@ -223,7 +223,7 @@
   font-weight: 500;
   height: 35%;
   color: white;
-  animation: AbrirLetras 1.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  /* animation: AbrirLetras 1.4s cubic-bezier(0.2, 0.8, 0.2, 1); */
 }
 
 .Espacio {
@@ -300,16 +300,11 @@
   .Menu {
     width: 100px;
   }
-  .RHK_Icono {
+  /* .RHK_Icono {
     width: 0%;
     height: 0%;
     position: absolute;
-  }
-  .RHK_Logo {
-    width: 0%;
-    height: 0%;
-    position: absolute;
-  }
+  } */
 
   .MenuEstado {
     width: 0%;

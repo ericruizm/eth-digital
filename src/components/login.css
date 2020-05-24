@@ -24,7 +24,7 @@ a {
 .LoginGroup {
   max-width: 500px;
   margin: 0 auto;
-  padding: 150px 50px;
+  padding: 150px 50px 50px 50px;
   text-align: center;
 }
 
@@ -88,7 +88,7 @@ a {
 }
 .form {
   height: 100%;
-  width: 50%;
+  width: 55%;
   position: relative;
   overflow: hidden;
   margin-top: 20px;
@@ -104,11 +104,12 @@ a {
   background: transparent;
   color: white;
   font-weight: 400;
+  font-size: 17px;
 }
 
 .form label {
   position: absolute;
-  left: 0%;
+  left: -1px;
   bottom: -8px;
   height: 100%;
   width: 100%;
@@ -130,7 +131,7 @@ a {
 .form span {
   color: rgba(255, 255, 255, 0.404);
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .content-name {
@@ -143,7 +144,7 @@ a {
 .form input:focus + .label-name .content-name,
 .form input:valid + .label-name .content-name {
   transform: translateY(-80%);
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .form input:focus + .label-name::after,
@@ -169,7 +170,7 @@ a {
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   cursor: pointer;
-  width: 68%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -178,19 +179,21 @@ a {
   color: #3c3c3b;
 }
 
+.Redhawk_LogIn {
+  animation: LoginAnimation 3s 0.1s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Redhawk_LogIn img {
+  height: 50px;
+  width: 50px;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
-select:-webkit-autofill:active {
-  border: none;
-  -webkit-text-fill-color: white;
-  -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0) inset;
-  transition: background-color 5000s ease-in-out 0s;
-}
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-  border: none;
-  -webkit-filter: opacity(0.3);
+input:-webkit-autofill:active {
+  -webkit-text-stroke-color: white;
+  -webkit-tap-highlight-color: white;
   -webkit-text-fill-color: white;
   -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0) inset;
   transition: background-color 5000s ease-in-out 0s;
@@ -207,7 +210,12 @@ select:-webkit-autofill:focus {
 
   .LogoEagle {
     height: 59px;
-    width: 100%;
+    width: 80%;
+
+    margin: 0 auto 30px auto;
+  }
+  .LoginGroup {
+    padding: 100px 50px 30px 50px;
   }
 }
 @keyframes LoginAnimation {

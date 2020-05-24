@@ -64,6 +64,20 @@ const TablaDepositos = (props) => (
           <h3 className="Sin_Contador">-</h3>
         </div>
       </div>
+
+      <div className="Datos2">
+        <div className="Datos_Grid_Aportaciones">
+          <h3 className="Fecha">25/03/2020</h3>
+          <h3 className="Cantidad">800 USDC</h3>
+          <div className="Grid_Aportacion_Tipo">
+            <img src={require("./images/REDHAWK Icon.png")} />
+            <h3 className="Aportacion_Tipo">RHK</h3>
+          </div>
+          <h3 className="Aportacion_Rechazada">Rechazado</h3>
+          <h3 className="ID_transaccion">ya18n8b1ljkbualmlonioYmTL</h3>
+          <h3 className="Sin_Contador">-</h3>
+        </div>
+      </div>
     </div>
   </div>
 );
