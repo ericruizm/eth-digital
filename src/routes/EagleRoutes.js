@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 // import Dashboard from '../pages/dashboard';
-import Login from "../pages/Login";
+import Login from "../pages/login";
 import Home from "../pages/Home";
 import Settings from "../pages/Settings";
 import Movements from "../pages/Movements";
