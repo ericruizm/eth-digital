@@ -47,9 +47,7 @@ const TablaDepositos = (props) => (
           </div>
           <h3 className="Aportacion_Aprobada">Aprobado</h3>
           <h3 className="ID_transaccion">ya18n8b1ljkbualmlonioYmTL</h3>
-          <div className="Boton_RetirarDinero">
-            <h3 className="En_Saldo">En saldo</h3>
-          </div>
+          <div className="Boton_RetirarDinero">En saldo</div>
         </div>
       </div>
 

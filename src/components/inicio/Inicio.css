@@ -303,8 +303,31 @@ body {
 }
 
 .Boton_RetirarDinero {
+  box-sizing: border-box;
+  height: 30px;
+  width: 110px;
+  border-radius: 3px 10px;
+  border: 0.5px solid #fff;
+  margin-top: 26px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 14px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  scale: 1;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  cursor: default;
 }
-.En_Saldo {
+
+.Boton_RetirarDinero:hover {
+  font-weight: 400;
+  transform: scale(1.09);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+/* .En_Saldo {
   width: 125px;
   margin-top: 26px;
   height: 20.72px;
@@ -312,7 +335,7 @@ body {
   font-size: 16px;
   letter-spacing: 0.7px;
   line-height: 19px;
-}
+} */
 
 .Sin_Contador {
   width: 125px;
