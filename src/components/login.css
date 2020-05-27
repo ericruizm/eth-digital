@@ -31,11 +31,12 @@ a {
 .LogoEagle {
   height: 59px;
   width: 100%;
-  background: url("../images/EG_Imago_H_Oro.png");
+  background: url("../images/EGI_Imago_H_Oro.png");
   background-size: contain;
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
   margin-bottom: 60px;
+  margin-left: 18px;
   animation: LoginAnimation 3s 0.1s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 .FormGroup {

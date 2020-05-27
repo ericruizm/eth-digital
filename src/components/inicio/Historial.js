@@ -22,8 +22,8 @@ const Historial = () => (
           <h3 className="Fecha">22/04/2020</h3>
           <h3 className="Cantidad">3.500 USDC</h3>
           <div className="Grid_Aportacion_Tipo">
-            <img src={require("./images/REDHAWK Icon.png")} />
-            <h3 className="Aportacion_Tipo">RHK</h3>
+            <img src={require("./images/ALBATROSS Icon.png")} />
+            <h3 className="Aportacion_Tipo">ALB</h3>
           </div>
           <h3 className="Beneficio">300 USDC</h3>
           <h3 className="Beneficio_Porcentaje">1.2%</h3>
@@ -34,8 +34,8 @@ const Historial = () => (
           <h3 className="Fecha">15/04/2020</h3>
           <h3 className="Cantidad">2.675 USDC</h3>
           <div className="Grid_Aportacion_Tipo">
-            <img src={require("./images/REDHAWK Icon.png")} />
-            <h3 className="Aportacion_Tipo">RHK</h3>
+            <img src={require("./images/ALBATROSS Icon.png")} />
+            <h3 className="Aportacion_Tipo">ALB</h3>
           </div>
           <h3 className="Beneficio">50 USDC</h3>
           <h3 className="Beneficio_Porcentaje">0.8%</h3>
@@ -46,8 +46,8 @@ const Historial = () => (
           <h3 className="Fecha">15/04/2020</h3>
           <h3 className="Cantidad">2.675 USDC</h3>
           <div className="Grid_Aportacion_Tipo">
-            <img src={require("./images/REDHAWK Icon.png")} />
-            <h3 className="Aportacion_Tipo">RHK</h3>
+            <img src={require("./images/ALBATROSS Icon.png")} />
+            <h3 className="Aportacion_Tipo">ALB</h3>
           </div>
           <h3 className="Beneficio">50 USDC</h3>
           <h3 className="Beneficio_Porcentaje">0.8%</h3>

@@ -72,7 +72,7 @@ const MenuCerrado = (props) => (
         <img
           alt=""
           className="RHK_Logo"
-          src={require("./images/REDHAWK Icon.png")}
+          src={require("./images/ALBATROSS Icon.png")}
         />
       </div>
     </div>

@@ -87,10 +87,10 @@ const MenuAbierto = (props) => (
         <div className="Grid_RHK">
           <img
             className="RHK_Logo"
-            src={require("./images/REDHAWK Icon.png")}
+            src={require("./images/ALBATROSS Icon.png")}
             alt=""
           />
-          <h3 className="Redhawk_Texto">REDHAWK</h3>
+          <h3 className="Redhawk_Texto">ALBATROSS</h3>
         </div>
       </div>
     </div>

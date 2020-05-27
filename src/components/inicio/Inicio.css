@@ -107,7 +107,8 @@ body {
   display: inline-block;
   margin: 0 auto;
   margin-top: 70px;
-  width: 1000px;
+  padding: 0px 50px;
+  width: 100%;
   justify-items: center;
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -299,6 +300,9 @@ body {
   font-size: 16px;
   letter-spacing: 0.7px;
   line-height: 19px;
+}
+
+.Boton_RetirarDinero {
 }
 .En_Saldo {
   width: 125px;
