@@ -21,6 +21,7 @@ class Movements extends PureComponent {
       AbrirAjustes,
       AbrirInicio,
       AbrirContratos,
+      AbrirReferidos,
       AbrirMovimientos,
       inicio,
       depositos,
@@ -67,6 +68,7 @@ class Movements extends PureComponent {
               CerrarMenu={CerrarMenu}
               AbrirInicio={AbrirInicio}
               AbrirContratos={AbrirContratos}
+              AbrirReferidos={AbrirReferidos}
               AbrirMovimientos={AbrirMovimientos}
               AbrirAjustes={AbrirAjustes}
             />
@@ -135,6 +137,10 @@ const mapDispatchToProps = (dispatch) => ({
   AbrirContratos: () =>
     dispatch({
       type: "ABRIR_CONTRATOS",
+    }),
+  AbrirReferidos: () =>
+    dispatch({
+      type: "ABRIR_REFERIDOS",
     }),
   AbrirPortfolio: () =>
     dispatch({

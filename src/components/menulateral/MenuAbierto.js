@@ -28,13 +28,9 @@ const MenuAbierto = (props) => (
           }}
         >
           <div className="Espacio" />
-          <>
-            <img
-              className="Inicio"
-              src={require("./images/home_final.svg")}
-              alt=""
-            />
-          </>
+
+          <img className="Inicio" src={require("./images/home_final.svg")} />
+
           <h2 className="menuH2">Inicio</h2>
         </Link>
         <Link
@@ -50,14 +46,29 @@ const MenuAbierto = (props) => (
           }}
         >
           <div className="Espacio" />
-          <>
-            <img
-              className="Contratos"
-              src={require("./images/line-chart (2).svg")}
-              alt=""
-            />
-          </>
+          <img
+            className="Contratos"
+            src={require("./images/line-chart (2).svg")}
+          />
           <h2 className="menuH2">Contratos</h2>
+        </Link>
+        <Link
+          style={{ textDecoration: "none" }}
+          to="/referred"
+          className={
+            props.inicio.action === "AbrirReferidos"
+              ? "LineaPaginaFinal"
+              : "LineaFinal2"
+          }
+          onClick={() => {
+            props.AbrirReferidos();
+          }}
+        >
+          <div className="Espacio" />
+
+          <img className="Contratos" src={require("./images/link-2.svg")} />
+
+          <h2 className="menuH2">Referidos</h2>
         </Link>
         <Link
           style={{ textDecoration: "none" }}
@@ -72,13 +83,10 @@ const MenuAbierto = (props) => (
           }}
         >
           <div className="Espacio" />
-          <>
-            <img
-              className="Retiradas"
-              src={require("./images/transfer (2).svg")}
-              alt=""
-            />
-          </>
+          <img
+            className="Retiradas"
+            src={require("./images/transfer (2).svg")}
+          />
           <h2 className="menuH2">Movimientos</h2>
           <div className="Espacio" />
         </Link>
@@ -95,13 +103,9 @@ const MenuAbierto = (props) => (
           }}
         >
           <div />
-          <>
-            <img
-              className="Ajustes"
-              src={require("./images/gear_final.svg")}
-              alt=""
-            />
-          </>
+
+          <img className="Ajustes" src={require("./images/gear_final.svg")} />
+
           <h2 className="menuH2">Ajustes</h2>
         </Link>
       </div>
@@ -110,7 +114,6 @@ const MenuAbierto = (props) => (
           <img
             className="RHK_Logo"
             src={require("./images/ALBATROSS Icon.png")}
-            alt=""
           />
           <h3 className="Redhawk_Texto">ALBATROSS</h3>
         </div>

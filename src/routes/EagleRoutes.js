@@ -6,6 +6,7 @@ import Home from "../pages/Home";
 import Settings from "../pages/Settings";
 import Movements from "../pages/Movements";
 import Contratos from "../pages/Contratos";
+import Referidos from "../pages/Referidos";
 
 export function LoginRoutes() {
   return (
@@ -15,6 +16,11 @@ export function LoginRoutes() {
       <Route
         path="/contracts"
         render={(props) => <Contratos {...props} />}
+        defaults
+      />
+      <Route
+        path="/referred"
+        render={(props) => <Referidos {...props} />}
         defaults
       />
       <Route
@@ -36,6 +42,16 @@ export function LogoutRoutes() {
     <Switch>
       <Route path="/" render={(props) => <Login {...props} />} defaults />
       <Route path="/home" render={(props) => <Home {...props} />} defaults />
+      <Route
+        path="/contracts"
+        render={(props) => <Contratos {...props} />}
+        defaults
+      />
+      <Route
+        path="/referred"
+        render={(props) => <Referidos {...props} />}
+        defaults
+      />
       <Route
         path="/movements"
         render={(props) => <Movements {...props} />}

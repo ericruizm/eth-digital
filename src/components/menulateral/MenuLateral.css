@@ -240,6 +240,11 @@
   width: 20px;
 }
 
+.Referidos {
+  height: 20px;
+  width: 20px;
+}
+
 .Depositos {
   height: 20px;
   width: 20px;
@@ -349,5 +354,11 @@
   }
   .LineaFinal2 {
     grid-template-columns: 40px 50px 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .MenuGroupFinal {
+    height: 350px;
   }
 }

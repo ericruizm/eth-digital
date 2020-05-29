@@ -84,11 +84,17 @@ body {
   padding-right: 35px;
 }
 
+.Wrapper_Rectangulo3 {
+  padding-top: 50px;
+  padding-left: 160px;
+  padding-right: 35px;
+}
+
 .Rectangulo {
   height: 100%;
   padding: 0px 30px 100px 30px;
   width: 100%;
-  border-radius: 5px 80px;
+  border-radius: 5px 80px 5px 160px;
   background: linear-gradient(180deg, #282827 40%, #3c3c3b 100%);
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1);
 }
@@ -150,12 +156,35 @@ body {
   grid-gap: 30px;
   align-items: center;
 }
+.Contenedor_Rectangulo3 {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 70px;
+  padding: 0px 50px;
+  width: 100%;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-gap: 30px;
+  align-items: center;
+}
 
 .Cantidades {
   height: 100%;
   width: 95%;
   padding-bottom: 30px;
-  border-radius: 5px 30px;
+  border-radius: 5px 30px 5px 70px;
+  background-color: rgba(18, 18, 18, 0.2);
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1);
+  scale: 1;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Cantidades3 {
+  height: 100%;
+  width: 95%;
+  padding-bottom: 30px;
+  border-radius: 5px 30px 5px 70px;
   background-color: rgba(18, 18, 18, 0.2);
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1);
   scale: 1;
@@ -164,6 +193,12 @@ body {
 
 .Cantidades:hover {
   transform: scale(1.06);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  background-color: rgba(18, 18, 18, 0.3);
+}
+
+.Cantidades3:hover {
+  transform: scale(1.03);
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
   background-color: rgba(18, 18, 18, 0.3);
 }
@@ -248,7 +283,7 @@ body {
   height: 76.35px;
   padding: 0px 30px;
   width: 100%;
-  border-radius: 5px 30px;
+  border-radius: 5px 30px 5px 70px;
   background: linear-gradient(
     90deg,
     rgba(60, 60, 59, 0.2) 0%,
@@ -480,6 +515,9 @@ body {
   .Wrapper_Rectangulo {
     padding-left: 35px;
   }
+  .Wrapper_Rectangulo3 {
+    padding-left: 35px;
+  }
   .Texto_Cantidades {
     font-size: 15px;
     letter-spacing: 1.5px;
@@ -550,6 +588,23 @@ body {
     width: 262.15px;
     font-size: 14px;
   }
+  .Contenedor_Rectangulo3 {
+    grid-template-columns: repeat(1, auto);
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0px 2px;
+  }
+  .Cantidades3 {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 30px;
+    border-radius: 5px 30px 5px 70px;
+    background-color: rgba(18, 18, 18, 0.2);
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1);
+    scale: 1;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
 }
 
 @media (max-width: 500px) {
@@ -594,6 +649,9 @@ body {
     font-size: 20px;
   }
   .Wrapper_Rectangulo {
+    padding-left: 35px;
+  }
+  .Wrapper_Rectangulo3 {
     padding-left: 35px;
   }
   .Texto_Cantidades {

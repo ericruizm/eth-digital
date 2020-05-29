@@ -19,6 +19,7 @@ class Home extends React.PureComponent {
       CerrarMenu,
       AbrirAjustes,
       AbrirInicio,
+      AbrirReferidos,
       AbrirContratos,
       AbrirMovimientos,
       inicio,
@@ -43,9 +44,10 @@ class Home extends React.PureComponent {
         <MenuLateral
           menu={menu}
           inicio={inicio}
-          abrirMenu={AbrirMenu}
-          cerrarMenu={CerrarMenu}
+          AbrirMenu={AbrirMenu}
+          CerrarMenu={CerrarMenu}
           AbrirInicio={AbrirInicio}
+          AbrirReferidos={AbrirReferidos}
           AbrirContratos={AbrirContratos}
           AbrirMovimientos={AbrirMovimientos}
           AbrirAjustes={AbrirAjustes}
@@ -79,6 +81,10 @@ const mapDispatchToProps = (dispatch) => ({
   AbrirInicio: () =>
     dispatch({
       type: "ABRIR_INICIO",
+    }),
+  AbrirReferidos: () =>
+    dispatch({
+      type: "ABRIR_REFERIDOS",
     }),
   AbrirContratos: () =>
     dispatch({

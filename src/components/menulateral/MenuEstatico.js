@@ -43,6 +43,17 @@ const MenuEstatico = (props) => {
             />
           </Link>
           <Link
+            to="/referred"
+            className={
+              props.inicio.action === "AbrirReferidos" ? "LineaPagina" : "Linea"
+            }
+            onClick={() => {
+              props.AbrirReferidos();
+            }}
+          >
+            <img className="Referidos" src={require("./images/link-2.svg")} />
+          </Link>
+          <Link
             to="/movements"
             className={
               props.inicio.action === "AbrirMovimientos"

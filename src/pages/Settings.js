@@ -11,11 +11,12 @@ class Settings extends PureComponent {
   render() {
     const {
       menu,
-      abrirMenu,
-      cerrarMenu,
+      AbrirMenu,
+      CerrarMenu,
       AbrirAjustes,
       AbrirInicio,
       AbrirContratos,
+      AbrirReferidos,
       AbrirMovimientos,
       inicio,
       AbrirDatosUser,
@@ -47,10 +48,11 @@ class Settings extends PureComponent {
             <MenuLateral
               menu={menu}
               inicio={inicio}
-              abrirMenu={abrirMenu}
-              cerrarMenu={cerrarMenu}
+              AbrirMenu={AbrirMenu}
+              CerrarMenu={CerrarMenu}
               AbrirInicio={AbrirInicio}
               AbrirContratos={AbrirContratos}
+              AbrirReferidos={AbrirReferidos}
               AbrirMovimientos={AbrirMovimientos}
               AbrirAjustes={AbrirAjustes}
             />
@@ -77,11 +79,15 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  abrirMenu: () => {
-    dispatch(actionAbrirMenu());
+  AbrirMenu: () => {
+    dispatch({
+      type: "ABRIR_MENU",
+    });
   },
-  cerrarMenu: () => {
-    dispatch(actionCerrarMenu());
+  CerrarMenu: () => {
+    dispatch({
+      type: "CERRAR_MENU",
+    });
   },
   AbrirInicio: () =>
     dispatch({
@@ -90,6 +96,10 @@ const mapDispatchToProps = (dispatch) => ({
   AbrirContratos: () =>
     dispatch({
       type: "ABRIR_CONTRATOS",
+    }),
+  AbrirReferidos: () =>
+    dispatch({
+      type: "ABRIR_REFERIDOS",
     }),
   AbrirPortfolio: () =>
     dispatch({

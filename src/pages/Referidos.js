@@ -1,17 +1,15 @@
 import React, { PureComponent } from "react";
 import { connect } from "react-redux";
 import MenuLateral from "../components/menulateral/MenuLateral";
-import EncabezadoContratos from "../components/contratos/EncabezadoContratos";
-import ResumenContratos from "../components/contratos/ResumenContratos";
+import EncabezadoReferidos from "../components/referidos/EncabezadoReferidos";
+import LinkReferido from "../components/referidos/LinkReferido";
+import ResumenReferidos from "../components/referidos/ResumenReferidos";
 import HistorialContratos from "../components/contratos/HistorialContratos";
-import Alerta from "../components/movimientos/Alerta";
-import PopupPagoUSDC from "../components/depositos/PopupPagoUSDC";
-import PopupPagoSaldo from "../components/depositos/PopupPagoSaldo";
 import Consulta from "../components/consulta/Consulta";
 import AlertaConsulta from "../components/consulta/AlertaConsulta";
 import LogOut from "../components/logout/LogOut";
 
-class Contratos extends PureComponent {
+class Referidos extends PureComponent {
   render() {
     const {
       menu,
@@ -19,8 +17,8 @@ class Contratos extends PureComponent {
       CerrarMenu,
       AbrirAjustes,
       AbrirInicio,
-      AbrirReferidos,
       AbrirContratos,
+      AbrirReferidos,
       AbrirMovimientos,
       inicio,
       consulta,
@@ -30,13 +28,8 @@ class Contratos extends PureComponent {
       AbrirAviso,
       CerrarAviso,
       AbrirAlerta,
-      CerrarAlerta,
-      alerta,
-      depositos,
       AbrirDepositos,
-      CerrarDepositos,
       AbrirRetiradas,
-      CerrarRetiradas,
     } = this.props;
     return (
       <div>
@@ -52,35 +45,23 @@ class Contratos extends PureComponent {
             CerrarAlertaConsulta={CerrarAlertaConsulta}
             consulta={consulta}
           />
-          {alerta.action === "AbrirAlerta" ? (
-            <Alerta CerrarAlerta={CerrarAlerta} />
-          ) : null}
           <MenuLateral
             menu={menu}
             inicio={inicio}
             AbrirMenu={AbrirMenu}
             CerrarMenu={CerrarMenu}
             AbrirInicio={AbrirInicio}
-            AbrirContratos={AbrirContratos}
             AbrirReferidos={AbrirReferidos}
+            AbrirContratos={AbrirContratos}
             AbrirMovimientos={AbrirMovimientos}
             AbrirAjustes={AbrirAjustes}
           />
-          {depositos.action === "AbrirDepositos" ? (
-            <PopupPagoUSDC CerrarDepositos={CerrarDepositos} />
-          ) : null}
-          {depositos.action === "AbrirRetiradas" ? (
-            <PopupPagoSaldo CerrarRetiradas={CerrarRetiradas} />
-          ) : null}
-          <EncabezadoContratos
+          <EncabezadoReferidos
             AbrirAviso={AbrirAviso}
             AbrirAjustes={AbrirAjustes}
           />
-          <ResumenContratos
-            AbrirDepositos={AbrirDepositos}
-            AbrirRetiradas={AbrirRetiradas}
-          />
-          <HistorialContratos AbrirAlerta={AbrirAlerta} />
+          <LinkReferido />
+          <ResumenReferidos />
         </div>
       </div>
     );
@@ -173,4 +154,4 @@ const mapDispatchToProps = (dispatch) => ({
     }),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Contratos);
+export default connect(mapStateToProps, mapDispatchToProps)(Referidos);

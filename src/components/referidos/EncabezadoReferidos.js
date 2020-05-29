@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const EncabezadoContratos = (props) => (
+const EncabezadoReferidos = (props) => (
   <div>
     <div className="Encabezado">
-      <h2>Contratos</h2>
+      <h2>Referidos</h2>
     </div>
     <div className="Nombre">
       <Link
@@ -16,9 +16,13 @@ const EncabezadoContratos = (props) => (
       >
         <h2>Roger W.</h2>
       </Link>
-      <img onClick={props.AbrirAviso} src={require("./images/logout .svg")} />
+      <img
+        onClick={props.AbrirAviso}
+        alt=""
+        src={require("./images/logout .svg")}
+      />
     </div>
   </div>
 );
 
-export default EncabezadoContratos;
+export default EncabezadoReferidos;

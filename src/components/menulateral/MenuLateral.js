@@ -12,6 +12,7 @@ const MenuLateral = (props) => {
         CerrarMenu={props.CerrarMenu}
         AbrirInicio={props.AbrirInicio}
         AbrirContratos={props.AbrirContratos}
+        AbrirReferidos={props.AbrirReferidos}
         AbrirMovimientos={props.AbrirMovimientos}
         AbrirAjustes={props.AbrirAjustes}
         inicio={props.inicio}
@@ -26,6 +27,7 @@ const MenuLateral = (props) => {
         cerrarMenu={props.cerrarMenu}
         AbrirInicio={props.AbrirInicio}
         AbrirContratos={props.AbrirContratos}
+        AbrirReferidos={props.AbrirReferidos}
         AbrirMovimientos={props.AbrirMovimientos}
         AbrirAjustes={props.AbrirAjustes}
         inicio={props.inicio}
@@ -39,6 +41,7 @@ const MenuLateral = (props) => {
       CerrarMenu={props.CerrarMenu}
       AbrirInicio={props.AbrirInicio}
       AbrirContratos={props.AbrirContratos}
+      AbrirReferidos={props.AbrirReferidos}
       AbrirMovimientos={props.AbrirMovimientos}
       AbrirAjustes={props.AbrirAjustes}
       inicio={props.inicio}
