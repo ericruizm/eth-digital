@@ -104,6 +104,30 @@
   margin-top: -30px;
 }
 
+.Wrapper_Cantidad_Minima {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 375px;
+  margin-left: 15%;
+}
+
+.Wrapper_Direccion_Billetera_USDC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 375px;
+  margin-left: 15.3%;
+}
+
+.Cantidad_Minima {
+  color: #fff;
+  font-weight: 300;
+  font-size: 11px;
+  letter-spacing: 0.65px;
+  line-height: 13px;
+}
+
 .ETH {
   margin-top: 68px;
 }
@@ -420,20 +444,12 @@
   vertical-align: middle;
   line-height: 52px;
 }
-.Cantidad_Minima {
-  margin-right: 100px;
-  color: #fff;
-  font-weight: 300;
-  font-size: 11px;
-  letter-spacing: 0.65px;
-  line-height: 13px;
-}
 
 .Confirmar_Deposito {
   color: #fff;
   font-size: 22px;
   letter-spacing: 1.29px;
-  line-height: 26px;
+  line-height: 30px;
   text-align: center;
 }
 
@@ -483,6 +499,10 @@
     margin: 0 auto;
   }
   .Wrapper_Cantidad_Minima {
+    width: 375px;
+    margin: 0 auto;
+  }
+  .Wrapper_Direccion_Billetera_USDC {
     width: 375px;
     margin: 0 auto;
   }
@@ -570,13 +590,16 @@
 }
 
 @media (max-width: 500px) {
+  .Depositos_Retiradas {
+    height: 200%;
+  }
   .Wrapper_Depositos {
     padding-top: 100px;
     padding-left: 4%;
     padding-right: 4%;
   }
   .Rectangulo_Depositos {
-    height: 800px;
+    height: 850px;
   }
   .Botones_Grid {
     width: 90%;
@@ -593,17 +616,25 @@
   }
   .Form_Depositos_Wrapper {
     margin: 0 auto;
-    width: 320px;
+    width: 280px;
   }
   .Form_Depositos_Wrapper2 {
     margin: 0 auto;
-    width: 320px;
+    width: 280px;
+  }
+  .Wrapper_Cantidad_Minima {
+    width: 280px;
+    margin: 2px auto 0 auto;
+  }
+  .Wrapper_Direccion_Billetera_USDC {
+    width: 280px;
+    margin: 0 auto;
   }
   .Direccion_Billetera {
-    width: 330px;
+    width: 280px;
   }
   .Billetera {
-    font-size: 16px;
+    font-size: 13px;
   }
   .Confirmar_Deposito {
     font-size: 12px;
@@ -619,7 +650,7 @@
     scale: 1;
   }
   .Direccion_Retirada {
-    width: 330px;
+    width: 280px;
   }
   .Saldo_Disponible {
     font-size: 15px;
@@ -629,7 +660,7 @@
     font-size: 12px;
   }
   .Grid_Direccion_Retirada {
-    grid-gap: 40px;
+    grid-gap: 20px;
   }
   .Boton_Cerrar {
     margin-top: 30px;

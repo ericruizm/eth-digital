@@ -1,28 +1,31 @@
-import React from 'react';
-import MenuAbierto from './MenuAbierto';
-import MenuCerrado from './MenuCerrado';
-import MenuEstatico from './MenuEstatico';
+import React from "react";
+import MenuAbierto from "./MenuAbierto";
+import MenuCerrado from "./MenuCerrado";
+import MenuEstatico from "./MenuEstatico";
 
 const MenuLateral = (props) => {
-  if (props.menu.action === 'AbrirMenu') {
+  if (props.menu.action === "AbrirMenu") {
     return (
       <MenuAbierto
-        abrirMenu={props.abrirMenu}
+        AbrirMenu={props.AbrirMenu}
         menu={props.menu}
-        cerrarMenu={props.cerrarMenu}
+        CerrarMenu={props.CerrarMenu}
         AbrirInicio={props.AbrirInicio}
+        AbrirContratos={props.AbrirContratos}
         AbrirMovimientos={props.AbrirMovimientos}
         AbrirAjustes={props.AbrirAjustes}
         inicio={props.inicio}
       />
     );
-  } if (props.menu.action === 'CerrarMenu') {
+  }
+  if (props.menu.action === "CerrarMenu") {
     return (
       <MenuCerrado
-        abrirMenu={props.abrirMenu}
+        AbrirMenu={props.AbrirMenu}
         menu={props.menu}
         cerrarMenu={props.cerrarMenu}
         AbrirInicio={props.AbrirInicio}
+        AbrirContratos={props.AbrirContratos}
         AbrirMovimientos={props.AbrirMovimientos}
         AbrirAjustes={props.AbrirAjustes}
         inicio={props.inicio}
@@ -31,10 +34,11 @@ const MenuLateral = (props) => {
   }
   return (
     <MenuEstatico
-      abrirMenu={props.abrirMenu}
+      AbrirMenu={props.AbrirMenu}
       menu={props.menu}
-      cerrarMenu={props.cerrarMenu}
+      CerrarMenu={props.CerrarMenu}
       AbrirInicio={props.AbrirInicio}
+      AbrirContratos={props.AbrirContratos}
       AbrirMovimientos={props.AbrirMovimientos}
       AbrirAjustes={props.AbrirAjustes}
       inicio={props.inicio}

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Depositos.css";
 
-const Popup = (props) => (
+const PopupPagoUSDC = (props) => (
   <div className="Depositos_Retiradas">
     <div className="Wrapper_Depositos">
       <div className="Rectangulo_Depositos">
@@ -46,13 +46,13 @@ const Popup = (props) => (
         <div className="Wrapper_Boton">
           <div className="Botones_Grid">
             <div className="Boton_Depositar">
-              <div className="Grid_Boton_Depositar">
-                <img
+              {/* <div className="Grid_Boton_Depositar"> */}
+              {/* <img
                   className="Depositos_popup"
                   src={require("./images/withdraw_final.svg")}
-                />
-                <h3 className="Confirmar_Deposito">Confirmar depósito</h3>
-              </div>
+                /> */}
+              <h3 className="Confirmar_Deposito">Realizar nuevo contrato</h3>
+              {/* </div> */}
             </div>
           </div>
         </div>
@@ -61,4 +61,4 @@ const Popup = (props) => (
   </div>
 );
 
-export default Popup;
+export default PopupPagoUSDC;

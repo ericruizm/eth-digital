@@ -9,9 +9,8 @@ const MenuEstatico = (props) => {
       <div className="MenuEstatico">
         <div className="Menu">
           <img
-            alt=""
             onClick={() => {
-              props.abrirMenu();
+              props.AbrirMenu();
             }}
             className="Logo"
             src={require("./images/menu (1).svg")}
@@ -27,13 +26,21 @@ const MenuEstatico = (props) => {
               props.AbrirInicio();
             }}
           >
-            <>
-              <img
-                alt=""
-                className="Inicio"
-                src={require("./images/home_final.svg")}
-              />
-            </>
+            <img className="Inicio" src={require("./images/home_final.svg")} />
+          </Link>
+          <Link
+            to="/contracts"
+            className={
+              props.inicio.action === "AbrirContratos" ? "LineaPagina" : "Linea"
+            }
+            onClick={() => {
+              props.AbrirContratos();
+            }}
+          >
+            <img
+              className="Contratos"
+              src={require("./images/line-chart (2).svg")}
+            />
           </Link>
           <Link
             to="/movements"
@@ -46,13 +53,10 @@ const MenuEstatico = (props) => {
               props.AbrirMovimientos();
             }}
           >
-            <>
-              <img
-                alt=""
-                className="Retiradas"
-                src={require("./images/transfer (2).svg")}
-              />
-            </>
+            <img
+              className="Retiradas"
+              src={require("./images/transfer (2).svg")}
+            />
           </Link>
           <Link
             to="/settings"
@@ -63,18 +67,11 @@ const MenuEstatico = (props) => {
               props.AbrirAjustes();
             }}
           >
-            <>
-              <img
-                className="Ajustes"
-                src={require("./images/gear_final.svg")}
-                alt=""
-              />
-            </>
+            <img className="Ajustes" src={require("./images/gear_final.svg")} />
           </Link>
         </div>
         <div className="RHK_Icono">
           <img
-            alt=""
             className="RHK_Logo"
             src={require("./images/ALBATROSS Icon.png")}
           />

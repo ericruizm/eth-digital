@@ -17,6 +17,8 @@ const reducerInicio = (state = { action: "AbrirInicio" }, action) => {
       return { ...state, action: "CerrarPortfolio" };
     case "ABRIR_INICIO":
       return { ...state, action: "AbrirInicio" };
+    case "ABRIR_CONTRATOS":
+      return { ...state, action: "AbrirContratos" };
     case "CERRAR_INICIO":
       return { ...state, action: "CerrarInicio" };
     case "ABRIR_MOVIMIENTOS":

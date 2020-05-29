@@ -23,10 +23,11 @@
   width: 100%;
   justify-items: center;
   display: grid;
-  grid-template-columns: repeat(6, auto);
+  grid-template-columns: repeat(5, auto);
   overflow-x: auto;
   white-space: nowrap;
 }
+
 .Datos_Grid_Retiradas {
   display: inline-block;
   margin: 0px auto;
@@ -53,6 +54,7 @@
   scale: 1;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
+
 .Datos2:hover {
   transform: scale(1.02);
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -65,6 +67,7 @@
   opacity: 0.5;
   cursor: pointer;
 }
+
 .Boton_Cancelar_Aportacion2 {
   width: 100px;
   margin-top: 20px;
@@ -120,7 +123,7 @@
   margin-top: 20px;
   border-radius: 5px 20px 0px 0px;
   cursor: pointer;
-  z-index: 10;
+  z-index: 2;
 }
 
 .Boton_BalanceDisponible_Desmarcado {
@@ -213,6 +216,7 @@
   text-align: center;
   justify-items: center;
 }
+
 .Titulo_Tabla2 {
   width: 100px;
   margin-top: 26px;
@@ -224,7 +228,6 @@
   letter-spacing: 0.7px;
   line-height: 19px;
   margin-bottom: 10px;
-
   cursor: pointer;
 }
 
@@ -233,7 +236,6 @@
   width: 16px;
   opacity: 0.4;
   margin-top: 28px;
-
   cursor: pointer;
 }
 
@@ -248,11 +250,9 @@
   .Grid_Aportacion_Tipo {
     width: 95px;
   }
-
   .Aportacion_Tipo {
     font-size: 14px;
   }
-
   .Aportacion_Pendiente {
     width: 95px;
     font-size: 14px;
@@ -274,15 +274,12 @@
   .Boton_Aportaciones_Marcado {
     margin-left: 35px;
   }
-
   .Boton_Aportaciones_Desmarcado {
     margin-left: 35px;
   }
-
   .Boton_BalanceDisponible_Marcado {
     margin-left: 220px;
   }
-
   .Boton_BalanceDisponible_Desmarcado {
     margin-left: 220px;
   }
@@ -302,11 +299,9 @@
   .Grid_Aportacion_Tipo {
     width: 70px;
   }
-
   .Aportacion_Tipo {
     font-size: 13px;
   }
-
   .Aportacion_Pendiente {
     width: 70px;
     font-size: 13px;
@@ -330,20 +325,17 @@
     margin-left: 35px;
     width: 130px;
   }
-
   .Boton_Aportaciones_Desmarcado {
     margin-left: 35px;
     width: 130px;
   }
-
   .Boton_BalanceDisponible_Marcado {
     margin-left: 160px;
-    width: 180px;
+    width: 130px;
   }
-
   .Boton_BalanceDisponible_Desmarcado {
     margin-left: 160px;
-    width: 180px;
+    width: 130px;
   }
   .Texto_Boton_Aportaciones {
     font-size: 10px;

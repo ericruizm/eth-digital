@@ -15,6 +15,7 @@ class Settings extends PureComponent {
       cerrarMenu,
       AbrirAjustes,
       AbrirInicio,
+      AbrirContratos,
       AbrirMovimientos,
       inicio,
       AbrirDatosUser,
@@ -49,6 +50,7 @@ class Settings extends PureComponent {
               abrirMenu={abrirMenu}
               cerrarMenu={cerrarMenu}
               AbrirInicio={AbrirInicio}
+              AbrirContratos={AbrirContratos}
               AbrirMovimientos={AbrirMovimientos}
               AbrirAjustes={AbrirAjustes}
             />
@@ -84,6 +86,10 @@ const mapDispatchToProps = (dispatch) => ({
   AbrirInicio: () =>
     dispatch({
       type: "ABRIR_INICIO",
+    }),
+  AbrirContratos: () =>
+    dispatch({
+      type: "ABRIR_CONTRATOS",
     }),
   AbrirPortfolio: () =>
     dispatch({

@@ -13,9 +13,8 @@ const Alerta = (props) => (
     <div className="Wrapper_Rectangulo_Alerta">
       <div className="Rectangulo_Alerta">
         <h3 className="Texto_Alerta">
-          Todo depósito realizado permanecerá depositado 75 días. Una vez
-          finalizado este periodo estará disponible para su retirada y se
-          reflejará en saldo disponible.
+          Todo depósito realizado permanecerá depositado 62 días. Una vez
+          finalizado este periodo se podrá acceder a su retirada.
         </h3>
       </div>
     </div>

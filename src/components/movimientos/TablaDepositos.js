@@ -12,7 +12,7 @@ const TablaDepositos = (props) => (
           <h3 className="Titulo_Tabla">Tipo</h3>
           <h3 className="Titulo_Tabla">Estado</h3>
           <h3 className="Titulo_Tabla_ID">ID de Transacción</h3>
-          <div onClick={props.AbrirAlerta} className="Grid_Dias_Restantes">
+          {/* <div onClick={props.AbrirAlerta} className="Grid_Dias_Restantes">
             <h3 className="Titulo_Tabla2">Días restantes</h3>
             <img
               onClick={() => {
@@ -21,7 +21,7 @@ const TablaDepositos = (props) => (
               className="Alerta_Icono"
               src={require("./images/alert-circle.svg")}
             />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="Datos2">
@@ -34,7 +34,7 @@ const TablaDepositos = (props) => (
           </div>
           <h3 className="Aportacion_Pendiente">Pendiente</h3>
           <h3 className="ID_transaccion">ya18n8b1ljkbualmlonioYmTL</h3>
-          <h3 className="Dias_Restantes">40 días</h3>
+          {/* <h3 className="Dias_Restantes">40 días</h3> */}
         </div>
       </div>
       <div className="Datos2">
@@ -47,7 +47,7 @@ const TablaDepositos = (props) => (
           </div>
           <h3 className="Aportacion_Aprobada">Aprobado</h3>
           <h3 className="ID_transaccion">ya18n8b1ljkbualmlonioYmTL</h3>
-          <div className="Boton_RetirarDinero">Retirar</div>
+          {/* <div className="Boton_RetirarDinero">Retirar</div> */}
         </div>
       </div>
 
@@ -61,7 +61,7 @@ const TablaDepositos = (props) => (
           </div>
           <h3 className="Aportacion_Rechazada">Rechazado</h3>
           <h3 className="ID_transaccion">ya18n8b1ljkbualmlonioYmTL</h3>
-          <h3 className="Sin_Contador">-</h3>
+          {/* <h3 className="Sin_Contador">-</h3> */}
         </div>
       </div>
 
@@ -75,7 +75,7 @@ const TablaDepositos = (props) => (
           </div>
           <h3 className="Aportacion_Rechazada">Rechazado</h3>
           <h3 className="ID_transaccion">ya18n8b1ljkbualmlonioYmTL</h3>
-          <h3 className="Sin_Contador">-</h3>
+          {/* <h3 className="Sin_Contador">-</h3> */}
         </div>
       </div>
     </div>

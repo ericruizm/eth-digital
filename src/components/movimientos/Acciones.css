@@ -28,9 +28,9 @@
 
 .Cantidades2 {
   height: 100%;
-  width: 80%;
-  padding-bottom: 40px;
-  border-radius: 5px 30px 5px 70px;
+  width: 90%;
+  padding-bottom: 30px;
+  border-radius: 5px 30px;
   background-color: rgba(18, 18, 18, 0.2);
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1);
   scale: 1;
@@ -39,7 +39,7 @@
 .Cantidades2:hover {
   transform: scale(1.06);
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-  background-color: rgba(18, 18, 18, 0.17);
+  background-color: rgba(18, 18, 18, 0.3);
 
   /* linea a cambiar */
 }

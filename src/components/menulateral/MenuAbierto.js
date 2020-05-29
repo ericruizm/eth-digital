@@ -8,7 +8,7 @@ const MenuAbierto = (props) => (
       <div className="Menu">
         <img
           onClick={() => {
-            props.cerrarMenu();
+            props.CerrarMenu();
           }}
           className="LogoFinal"
           src={require("./images/x.svg")}
@@ -36,6 +36,28 @@ const MenuAbierto = (props) => (
             />
           </>
           <h2 className="menuH2">Inicio</h2>
+        </Link>
+        <Link
+          style={{ textDecoration: "none" }}
+          to="/contracts"
+          className={
+            props.inicio.action === "AbrirContratos"
+              ? "LineaPaginaFinal"
+              : "LineaFinal2"
+          }
+          onClick={() => {
+            props.AbrirContratos();
+          }}
+        >
+          <div className="Espacio" />
+          <>
+            <img
+              className="Contratos"
+              src={require("./images/line-chart (2).svg")}
+              alt=""
+            />
+          </>
+          <h2 className="menuH2">Contratos</h2>
         </Link>
         <Link
           style={{ textDecoration: "none" }}

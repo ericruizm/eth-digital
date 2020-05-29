@@ -1,20 +1,26 @@
-import React from 'react';
-import './Movimientos.css';
-import '../inicio/Inicio.css';
+import React from "react";
+import "./Movimientos.css";
+import "../inicio/Inicio.css";
 
 const BotonRetiradasMarcado = (props) => (
   <div>
     <div
-      onClick={() => { console.log('CLICKCKCKC'); props.AbrirAportaciones(); }}
+      onClick={() => {
+        console.log("CLICKCKCKC");
+        props.AbrirAportaciones();
+      }}
       className="Boton_Aportaciones_Desmarcado"
     >
       <h3 className="Texto_Boton_Aportaciones">Depósitos</h3>
     </div>
     <div
       className="Boton_BalanceDisponible_Marcado"
-      onClick={() => { console.log('CLICKCKCKC'); props.AbrirBalance(); }}
+      onClick={() => {
+        console.log("CLICKCKCKC");
+        props.AbrirBalance();
+      }}
     >
-      <h3 className="Texto_Boton_Aportaciones">Retiradas</h3>
+      <h3 className="Texto_Boton_Aportaciones">Retiros</h3>
     </div>
   </div>
 );

@@ -16,10 +16,11 @@ class Movements extends PureComponent {
   render() {
     const {
       menu,
-      abrirMenu,
-      cerrarMenu,
+      AbrirMenu,
+      CerrarMenu,
       AbrirAjustes,
       AbrirInicio,
+      AbrirContratos,
       AbrirMovimientos,
       inicio,
       depositos,
@@ -62,9 +63,10 @@ class Movements extends PureComponent {
             <MenuLateral
               menu={menu}
               inicio={inicio}
-              abrirMenu={abrirMenu}
-              cerrarMenu={cerrarMenu}
+              AbrirMenu={AbrirMenu}
+              CerrarMenu={CerrarMenu}
               AbrirInicio={AbrirInicio}
+              AbrirContratos={AbrirContratos}
               AbrirMovimientos={AbrirMovimientos}
               AbrirAjustes={AbrirAjustes}
             />
@@ -116,15 +118,23 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  abrirMenu: () => {
-    dispatch(actionAbrirMenu());
+  AbrirMenu: () => {
+    dispatch({
+      type: "ABRIR_MENU",
+    });
   },
-  cerrarMenu: () => {
-    dispatch(actionCerrarMenu());
+  CerrarMenu: () => {
+    dispatch({
+      type: "CERRAR_MENU",
+    });
   },
   AbrirInicio: () =>
     dispatch({
       type: "ABRIR_INICIO",
+    }),
+  AbrirContratos: () =>
+    dispatch({
+      type: "ABRIR_CONTRATOS",
     }),
   AbrirPortfolio: () =>
     dispatch({

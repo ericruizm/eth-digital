@@ -5,12 +5,18 @@ import Login from "../pages/login";
 import Home from "../pages/Home";
 import Settings from "../pages/Settings";
 import Movements from "../pages/Movements";
+import Contratos from "../pages/Contratos";
 
 export function LoginRoutes() {
   return (
     <Switch>
       <Route path="/" render={(props) => <Login {...props} />} defaults exact />
       <Route path="/home" render={(props) => <Home {...props} />} defaults />
+      <Route
+        path="/contracts"
+        render={(props) => <Contratos {...props} />}
+        defaults
+      />
       <Route
         path="/movements"
         render={(props) => <Movements {...props} />}
