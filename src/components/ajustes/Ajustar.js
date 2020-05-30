@@ -58,9 +58,9 @@ const Ajustar = (props) => (
           : "Boton_DatosPer_Desmarcado"
       }
     >
-      <h3 className="Texto_Boton_DatosPer">Datos Personales</h3>
+      <h3 className="Texto_Boton_DatosPer">Ajustes</h3>
     </div>
-    <div
+    {/* <div
       onClick={() => {
         props.AbrirContrasena();
       }}
@@ -71,15 +71,15 @@ const Ajustar = (props) => (
       }
     >
       <h3 className="Texto_Boton_Contrasena">Contraseña</h3>
-    </div>
+    </div> */}
     <div className="Wrapper_Ajustes">
       <div className="Wrapper_Datos_Usuario">
         <div className="Grid_Wrapper_Datos_Usuario">
-          {props.ajustes.action === "AbrirDatosUser" ? <ContactData /> : null}
+          {props.ajustes.action === "AbrirDatosUser" ? <PersonalData /> : null}
           {props.ajustes.action === "AbrirDatosPersonales" ? (
-            <PersonalData />
+            <PasswordData />
           ) : null}
-          {props.ajustes.action === "AbrirContrasena" ? <PasswordData /> : null}
+          {/* {props.ajustes.action === "AbrirContrasena" ? <PasswordData /> : null} */}
         </div>
       </div>
     </div>

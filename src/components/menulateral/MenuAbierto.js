@@ -66,7 +66,7 @@ const MenuAbierto = (props) => (
         >
           <div className="Espacio" />
 
-          <img className="Contratos" src={require("./images/link-2.svg")} />
+          <img className="Contratos" src={require("./images/users.svg")} />
 
           <h2 className="menuH2">Referidos</h2>
         </Link>

@@ -36,6 +36,31 @@ const PersonalData = () => (
         </label>
       </div>
     </div>
+    <div className="Wrapper_Correo">
+      <div className="form_correo">
+        <input type="text" name="name" autoComplete="off" required />
+        <label htmlFor="name" className="label-name">
+          <span className="content-name-correo">Correo electrónico</span>
+        </label>
+      </div>
+    </div>
+    <div className="Wrapper_Telefono">
+      <div className="form_prefijo">
+        <input type="text" name="name" autoComplete="off" required />
+        <label htmlFor="name" className="label-name">
+          <span className="content-name-prefijo">+34</span>
+        </label>
+      </div>
+      <div className="form_telefono">
+        <input type="text" name="name" autoComplete="off" required />
+        <label htmlFor="name" className="label-name">
+          <span className="content-name-telefono">Teléfono</span>
+        </label>
+      </div>
+    </div>
+    <div className="Boton_Actualizar">
+      <h3 className="Actualizar">Actualizar</h3>
+    </div>
   </>
 );
 

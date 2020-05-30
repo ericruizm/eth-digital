@@ -49,7 +49,7 @@ const MenuCerrado = (props) => (
             props.AbrirReferidos();
           }}
         >
-          <img className="Referidos" src={require("./images/link-2.svg")} />
+          <img className="Referidos" src={require("./images/users.svg")} />
         </Link>
         <Link
           to="/movements"

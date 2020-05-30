@@ -45,6 +45,40 @@
   font-size: 16px;
   letter-spacing: 1.6px;
   line-height: 19px;
+  opacity: 0;
+}
+
+.Wrapper_Interes_Compuesto {
+  width: 583px;
+  padding-top: 40px;
+}
+
+.Grid_Interes_Compuesto {
+  width: 85%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 10px;
+  justify-content: right;
+  margin: 0 auto;
+}
+
+.Interes_Compuesto {
+  color: #fff;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.Texto_Correo_Electronico3 {
+  height: 38px;
+  width: 583px;
+  opacity: 0.8;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 3px;
+  line-height: 19px;
 }
 
 .form3 {
@@ -114,11 +148,18 @@
 }
 
 .Wrapper_Telefono {
-  width: 82%;
+  width: 141%;
   height: 100%;
   display: grid;
   grid-template-columns: 7% 50%;
   grid-gap: 20px;
+  justify-content: center;
+  text-align: left;
+  justify-items: center;
+}
+.Wrapper_Correo {
+  width: 84%;
+  height: 100%;
   justify-content: center;
   text-align: left;
   justify-items: center;
@@ -256,21 +297,88 @@
   transform: translateX(0%);
 }
 
+.form_correo {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.form_correo input {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.form_correo label {
+  position: absolute;
+  left: 0%;
+  bottom: -8px;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.404);
+}
+.form_correo label::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.856);
+  bottom: -1px;
+  left: 0%;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.form_correo span {
+  color: rgba(255, 255, 255, 0.404);
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.content-name-correo {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.form_correo input:focus + .label-name .content-name-correo,
+.form_correo input:valid + .label-name .content-name-correo {
+  transform: translateY(-110%);
+  font-size: 14px;
+}
+
+.form_correo input:focus + .label-name::after,
+.form_correo input:valid + .labe-name::after {
+  transform: translateX(0%);
+}
+
 .Boton_Actualizar {
   margin-top: 50px;
   height: 50px;
-  width: 50%;
+  width: 84%;
   border-radius: 5px 20px 5px 80px;
-  background: linear-gradient(355.12deg, #4d4839 0%, #af9760 100%);
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  background: linear-gradient(358.77deg, #4d4839 0%, #af9760 100%);
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
   scale: 1;
-  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: 1.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  cursor: pointer;
 }
 
 .Boton_Actualizar:hover {
   transform: scale(1.02);
-  background: linear-gradient(355.12deg, #4d4839 0%, #bba46d 100%);
-  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  background: linear-gradient(358.77deg, #4d4839 0%, #c7af77 100%);
+  transition: 1.3s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .Actualizar {
@@ -278,6 +386,35 @@
   font-size: 22px;
   letter-spacing: 1.29px;
   line-height: 26px;
+  text-align: center;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+.Boton_Actualizar2 {
+  margin-top: 50px;
+  height: 50px;
+  width: 84%;
+  border-radius: 5px 20px 5px 60px;
+  border: 2px solid #808080;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  scale: 1;
+  transition: 1.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  cursor: pointer;
+}
+
+.Boton_Actualizar2:hover {
+  transform: scale(1.02);
+  transition: 1.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Actualizar2 {
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1.78px;
+  line-height: 19px;
+  text-align: center;
   text-align: center;
   vertical-align: middle;
   line-height: 50px;
@@ -674,6 +811,12 @@
     text-align: center;
     justify-items: center;
   }
+  .Wrapper_Texto_Ajustes3 {
+    width: 80%;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+  }
   .Wrapper_Texto_Ajustes {
     width: 500px;
     justify-content: center;
@@ -710,16 +853,52 @@
     margin-left: 15%;
     margin-bottom: 10px;
   }
+  .Texto_Correo_Electronico3 {
+    width: 100%;
+    margin-left: -5%;
+    margin-bottom: 10px;
+  }
   .Boton_Actualizar {
+    width: 300px;
+  }
+  .Boton_Actualizar2 {
     width: 300px;
   }
   .Actualizar {
     color: #fff;
     font-size: 18px;
   }
+  .Wrapper_Interes_Compuesto {
+    width: 360px;
+    padding-top: 40px;
+  }
+
+  .Grid_Interes_Compuesto {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 10px;
+    justify-content: right;
+    margin: 0 auto;
+  }
+
+  .Interes_Compuesto {
+    color: #fff;
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    text-align: justify;
+  }
 }
 
 @media (max-width: 500px) {
+  .Texto_Correo_Electronico3 {
+    width: 100%;
+    font-size: 13px;
+    margin-left: -3%;
+    margin-bottom: 10px;
+  }
   .Boton_DatosUser_Marcado {
     margin-left: 35px;
     width: 100px;
@@ -756,7 +935,7 @@
     letter-spacing: 1.88px;
     text-align: left;
     vertical-align: middle;
-    line-height: 15px;
+    line-height: 35px;
   }
   .Boton_Contrasena_Marcado {
     margin-left: 228px;
@@ -809,22 +988,11 @@
     margin-left: 25%;
     margin-bottom: 30px;
   }
-  .Texto_Correo_Electronico2 {
-    width: 70%;
-    opacity: 0.8;
-    color: #fff;
-    font-weight: 300;
-    font-size: 12px;
-    letter-spacing: 1.6px;
-    line-height: 19px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    vertical-align: middle;
-    margin-left: 15%;
-    margin-bottom: 10px;
-  }
+
   .Boton_Actualizar {
+    width: 300px;
+  }
+  .Boton_Actualizar2 {
     width: 300px;
   }
   .Texto_Boton_DatosUser {
@@ -838,5 +1006,98 @@
   .Texto_Boton_Contrasena {
     font-size: 8px;
     text-align: center;
+  }
+  .Wrapper_Nombre_Apellidos {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+    justify-content: center;
+    text-align: left;
+    justify-items: center;
+    padding: 0 30px;
+  }
+  .Wrapper_Telefono {
+    width: 122%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 7% 50%;
+    grid-gap: 20px;
+    justify-content: center;
+    text-align: left;
+    justify-items: center;
+    padding: 0 30px;
+  }
+  .Wrapper_Correo {
+    width: 84%;
+    height: 100%;
+    justify-content: center;
+    text-align: left;
+    justify-items: center;
+    padding: 0 30px;
+  }
+
+  .Boton_Actualizar {
+    margin-top: 50px;
+    height: 50px;
+    width: 70%;
+    border-radius: 5px 20px 5px 80px;
+    background: linear-gradient(358.77deg, #4d4839 0%, #af9760 100%);
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+    scale: 1;
+    transition: 1.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .Boton_Actualizar2 {
+    width: 70%;
+    padding: 0 20px;
+  }
+  .form_nombre span {
+    color: rgba(255, 255, 255, 0.404);
+    font-weight: 300;
+    font-size: 13px;
+    padding-left: 2px;
+  }
+  .form_telefono span {
+    color: rgba(255, 255, 255, 0.404);
+    font-weight: 300;
+    font-size: 13px;
+  }
+  .form_correo span {
+    color: rgba(255, 255, 255, 0.404);
+    font-weight: 300;
+    font-size: 13px;
+  }
+  .form_prefijo span {
+    color: rgba(255, 255, 255, 0.404);
+    font-weight: 300;
+    font-size: 13px;
+  }
+  .form_telefono input:focus + .label-name .content-name-telefono,
+  .form_telefono input:valid + .label-name .content-name-telefono {
+    transform: translateY(-150%);
+    font-size: 10px;
+  }
+  .Wrapper_Interes_Compuesto {
+    width: 230px;
+    padding-top: 40px;
+  }
+
+  .Grid_Interes_Compuesto {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 10px;
+    justify-content: right;
+    margin: 0 auto;
+  }
+
+  .Interes_Compuesto {
+    color: #fff;
+    font-weight: 300;
+    font-size: 10px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    text-align: justify;
   }
 }
