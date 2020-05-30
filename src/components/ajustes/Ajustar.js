@@ -5,6 +5,7 @@ import "./Ajustes.css";
 import ContactData from "./pestanas/ContactData";
 import PersonalData from "./pestanas/PersonalData";
 import PasswordData from "./pestanas/PasswordData";
+import { Link } from "react-router-dom";
 
 const Ajustar = (props) => (
   <div>
@@ -13,11 +14,24 @@ const Ajustar = (props) => (
         <h2>Ajustes</h2>
       </div>
       <div className="Nombre">
-        <h2>Roger W.</h2>
         <img
+          className="Imagen_Rango"
+          alt=""
+          src={require("./images/Manager.svg")}
+        />
+        <Link
+          to="/settings"
+          style={{ textDecoration: "none" }}
           onClick={() => {
-            props.AbrirAviso();
+            props.AbrirAjustes();
           }}
+        >
+          <h2>Rango: Manager</h2>
+        </Link>
+        <img
+          className="Icono_Logout"
+          onClick={props.AbrirAviso}
+          alt=""
           src={require("./images/logout .svg")}
         />
       </div>

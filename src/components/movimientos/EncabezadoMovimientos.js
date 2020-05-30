@@ -9,6 +9,11 @@ const EncabezadoMovimientos = (props) => (
       <h2>Movimientos</h2>
     </div>
     <div className="Nombre">
+      <img
+        className="Imagen_Rango"
+        alt=""
+        src={require("./images/Manager.svg")}
+      />
       <Link
         to="/settings"
         style={{ textDecoration: "none" }}
@@ -16,9 +21,13 @@ const EncabezadoMovimientos = (props) => (
           props.AbrirAjustes();
         }}
       >
-        <h2>Roger W.</h2>
+        <h2>Rango: Manager</h2>
       </Link>
-      <img onClick={props.AbrirAviso} src={require("./images/logout .svg")} />
+      <img
+        className="Icono_Logout"
+        onClick={props.AbrirAviso}
+        src={require("./images/logout .svg")}
+      />
     </div>
   </div>
 );

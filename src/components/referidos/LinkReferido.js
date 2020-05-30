@@ -14,9 +14,9 @@ const LinkReferido = (props) => (
               <div className="Grid_Rango_Columna">
                 <img
                   className="Icono_Rango"
-                  src={require("./images/Cliente 2.svg")}
+                  src={require("./images/Manager.svg")}
                 />
-                <div className="Nombre_Rango">Cliente</div>
+                <div className="Nombre_Rango">Manager</div>
               </div>
               <div className="Borde_Link_Referido">
                 <div className="Link_Referido">

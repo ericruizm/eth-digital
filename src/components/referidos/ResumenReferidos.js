@@ -10,14 +10,23 @@ const ResumenReferidos = (props) => (
       <div className="Contenedor_Rectangulo">
         <div className="Cantidades">
           <h3 className="Titulo_Cantidades">Cantidad Despositada:</h3>
-          <h3 className="Texto_Cantidades">2.500 USDC</h3>
+          <div className="Grid_Volumen_Filas">
+            <h3 className="Texto_Cantidades">5.200 USDC</h3>
+            <div className="Barra_Progreso">
+              <div className="Progreso_Cantidad_Depositada"></div>
+            </div>
+            <div className="Grid_Num_Progreso">
+              <div className="Num_Progreso">0</div>
+              <div className="Num_Progreso">8.000</div>
+            </div>
+          </div>
         </div>
         <div className="Cantidades">
           <h3 className="Titulo_Cantidades">Volumen de equipo:</h3>
           <div className="Grid_Volumen_Filas">
-            <h3 className="Texto_Cantidades">30.000 USDC</h3>
+            <h3 className="Texto_Cantidades">28.000 USDC</h3>
             <div className="Barra_Progreso">
-              <div className="Progreso"></div>
+              <div className="Progreso_Volumen_Equipo"></div>
             </div>
             <div className="Grid_Num_Progreso">
               <div className="Num_Progreso">0</div>
@@ -27,7 +36,16 @@ const ResumenReferidos = (props) => (
         </div>
         <div className="Cantidades">
           <h3 className="Titulo_Cantidades">Volumen de clientes:</h3>
-          <h3 className="Texto_Cantidades">10.000 USDC</h3>
+          <div className="Grid_Volumen_Filas">
+            <h3 className="Texto_Cantidades">10.000 USDC</h3>
+            <div className="Barra_Progreso">
+              <div className="Progreso_Volumen_Clientes"></div>
+            </div>
+            <div className="Grid_Num_Progreso">
+              <div className="Num_Progreso">0</div>
+              <div className="Num_Progreso">30.000</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

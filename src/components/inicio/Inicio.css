@@ -45,7 +45,7 @@ body {
 
 .Nombre {
   height: 55px;
-  padding-top: 35px;
+  padding-top: 37px;
   padding-right: 50px;
   float: right;
   display: grid;
@@ -55,18 +55,19 @@ body {
 }
 
 .Nombre h2 {
-  width: 100%;
-  color: #fff;
-  font-size: 22px;
+  opacity: 0.6;
   font-weight: 300;
-  opacity: 0.3;
+  color: #af9760;
+  font-size: 18px;
+  letter-spacing: 0.79px;
+  line-height: 21px;
 }
 
 .Nombre h2:hover {
   opacity: 1;
 }
 
-.Nombre img {
+.Icono_Logout {
   padding-top: 2px;
   margin-left: 10px;
   height: 20px;
@@ -74,8 +75,17 @@ body {
   opacity: 0.3;
 }
 
-.Nombre img:hover {
+.Icono_Logout:hover {
   opacity: 1;
+}
+
+.Imagen_Rango {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 32px;
+  right: 235px;
+  opacity: 0.7;
 }
 
 .Wrapper_Rectangulo {
@@ -506,7 +516,7 @@ body {
     font-size: 20px;
   }
   .Nombre {
-    padding-top: 33px;
+    padding-top: 35px;
     padding-right: 50px;
   }
   .Nombre h2 {
@@ -592,7 +602,7 @@ body {
     grid-template-columns: repeat(1, auto);
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 105%;
     padding: 0px 2px;
   }
   .Cantidades3 {
@@ -604,6 +614,14 @@ body {
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1);
     scale: 1;
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .Imagen_Rango {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 32px;
+    right: 245px;
+    opacity: 0.7;
   }
 }
 
@@ -642,7 +660,7 @@ body {
     font-size: 20px;
   }
   .Nombre {
-    padding-top: 33px;
+    padding-top: 35px;
     padding-right: 50px;
   }
   .Nombre h2 {
@@ -732,5 +750,31 @@ body {
   }
   .Datos:hover {
     transform: scale(1.05);
+  }
+  .Imagen_Rango {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 35px;
+    right: 245px;
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 400px) {
+  .Encabezado h2 {
+    padding-top: 3px;
+    font-size: 16px;
+  }
+  .Nombre h2 {
+    font-size: 16px;
+  }
+  .Imagen_Rango {
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    top: 36px;
+    right: 215px;
+    opacity: 0.7;
   }
 }
