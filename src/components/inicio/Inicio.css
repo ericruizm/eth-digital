@@ -764,7 +764,7 @@ body {
 @media (max-width: 400px) {
   .Encabezado h2 {
     padding-top: 3px;
-    font-size: 16px;
+    font-size: 0px;
   }
   .Nombre h2 {
     font-size: 16px;
