@@ -10,7 +10,7 @@
   margin-right: 35px;
   margin-top: 60px;
   padding: 10px 20px 80px 20px;
-  border-radius: 0px 80px 5px 80px;
+  border-radius: 0px 80px 5px 160px;
   background: linear-gradient(180deg, #282827 0%, #3c3c3b 100%);
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1);
   /* width */
@@ -44,7 +44,7 @@
   height: 76.35px;
   padding: 0px 30px;
   width: 100%;
-  border-radius: 5px 30px;
+  border-radius: 5px 30px 5px 70px;
   background: linear-gradient(
     90deg,
     rgba(60, 60, 59, 0.2) 0%,

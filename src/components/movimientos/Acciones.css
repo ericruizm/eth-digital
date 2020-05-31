@@ -9,7 +9,7 @@
   height: 100%;
   padding: 0px 30px 100px 30px;
   width: 100%;
-  border-radius: 5px 80px;
+  border-radius: 5px 80px 5px 160px;
   background: linear-gradient(180deg, #282827 40%, #3c3c3b 100%);
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1);
 }
@@ -30,7 +30,7 @@
   height: 100%;
   width: 90%;
   padding-bottom: 30px;
-  border-radius: 5px 30px;
+  border-radius: 5px 30px 5px 70px;
   background-color: rgba(18, 18, 18, 0.2);
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1);
   scale: 1;
