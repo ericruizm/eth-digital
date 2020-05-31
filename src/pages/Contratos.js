@@ -73,6 +73,7 @@ class Contratos extends PureComponent {
             <PopupPagoSaldo CerrarRetiradas={CerrarRetiradas} />
           ) : null}
           <EncabezadoContratos
+            AbrirReferidos={AbrirReferidos}
             AbrirAviso={AbrirAviso}
             AbrirAjustes={AbrirAjustes}
           />

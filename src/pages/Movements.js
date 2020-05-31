@@ -89,6 +89,7 @@ class Movements extends PureComponent {
               </>
             ) : null}
             <Aportaciones
+              AbrirReferidos={AbrirReferidos}
               AbrirDepositos={AbrirDepositos}
               AbrirRetiradas={AbrirRetiradas}
               AbrirAportaciones={AbrirAportaciones}

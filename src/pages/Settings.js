@@ -57,6 +57,7 @@ class Settings extends PureComponent {
               AbrirAjustes={AbrirAjustes}
             />
             <Ajustes
+              AbrirReferidos={AbrirReferidos}
               AbrirContrasena={AbrirContrasena}
               AbrirDatosPersonales={AbrirDatosPersonales}
               AbrirDatosUser={AbrirDatosUser}

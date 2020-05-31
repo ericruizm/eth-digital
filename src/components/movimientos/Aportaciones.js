@@ -16,6 +16,7 @@ const Aportaciones = (props) => (
         <Alerta CerrarAlerta={props.CerrarAlerta} />
       ) : null}
       <EncabezadoMovimientos
+        AbrirReferidos={props.AbrirReferidos}
         AbrirAviso={props.AbrirAviso}
         AbrirAjustes={props.AbrirAjustes}
       />

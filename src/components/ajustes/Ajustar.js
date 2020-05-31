@@ -20,10 +20,10 @@ const Ajustar = (props) => (
           src={require("./images/Manager.svg")}
         />
         <Link
-          to="/settings"
+          to="/referred"
           style={{ textDecoration: "none" }}
           onClick={() => {
-            props.AbrirAjustes();
+            props.AbrirReferidos();
           }}
         >
           <h2>Rango: Manager</h2>

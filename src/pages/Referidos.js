@@ -57,6 +57,7 @@ class Referidos extends PureComponent {
             AbrirAjustes={AbrirAjustes}
           />
           <EncabezadoReferidos
+            AbrirReferidos={AbrirReferidos}
             AbrirAviso={AbrirAviso}
             AbrirAjustes={AbrirAjustes}
           />

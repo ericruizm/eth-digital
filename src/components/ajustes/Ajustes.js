@@ -5,6 +5,7 @@ const Ajustes = (props) => (
   <div>
     <div className="Hero">
       <Ajustar
+        AbrirReferidos={props.AbrirReferidos}
         AbrirContrasena={props.AbrirContrasena}
         AbrirDatosPersonales={props.AbrirDatosPersonales}
         AbrirDatosUser={props.AbrirDatosUser}

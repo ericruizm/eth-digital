@@ -52,7 +52,11 @@ class Home extends React.PureComponent {
           AbrirMovimientos={AbrirMovimientos}
           AbrirAjustes={AbrirAjustes}
         />
-        <Encabezado AbrirAviso={AbrirAviso} AbrirAjustes={AbrirAjustes} />
+        <Encabezado
+          AbrirReferidos={AbrirReferidos}
+          AbrirAviso={AbrirAviso}
+          AbrirAjustes={AbrirAjustes}
+        />
         <Resumen />
         <Historial />
       </div>
