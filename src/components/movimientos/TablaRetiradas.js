@@ -16,7 +16,7 @@ const TablaRetiradas = (props) => (
     <div className="Datos2">
       <div className="Datos_Grid_Retiradas">
         <h3 className="Fecha">15/04/2020</h3>
-        <h3 className="Cantidad">3000 USDC</h3>
+        <h3 className="Cantidad">3.000 USDC</h3>
         <div className="Grid_Aportacion_Tipo">
           <img src={require("./images/ALBATROSS Icon.png")} />
           <h3 className="Aportacion_Tipo">ALB</h3>
