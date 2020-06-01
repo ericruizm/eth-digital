@@ -18,7 +18,7 @@ const Resumen = () => (
         </div>
         <div className="Cantidades">
           <h3 className="Titulo_Cantidades">Saldo Disponible:</h3>
-          <h3 className="Texto_Cantidades">150 USDC</h3>
+          <h3 className="Texto_Cantidades">590 USDC</h3>
         </div>
       </div>
     </div>
