@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Encabezado = (props) => (
   <div>
     <div className="Encabezado">
-      <h2>IniciO</h2>
+      <h2>Inicio</h2>
     </div>
     <div className="Nombre">
       <img
